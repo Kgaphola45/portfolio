@@ -427,6 +427,29 @@ main {
   color: var(--clr-primary);
 }
 
+/* Collapsed experience content + actions */
+.experience__content--collapsed {
+  max-height: 260px;
+  overflow: hidden;
+  position: relative;
+}
+
+.experience__content--collapsed::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 80px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--clr-bg-alt));
+}
+
+.experience__actions {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0 0;
+}
+
 /* Education Section Styles */
 .education__container {
   max-width: 1000px;
