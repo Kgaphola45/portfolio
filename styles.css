@@ -1924,7 +1924,7 @@ main {
   background: var(--clr-bg-alt);
   border-radius: 16px;
   box-shadow: var(--shadow);
-  overflow: auto;
+  overflow: hidden;
   padding: 2rem;
 }
 
@@ -1940,6 +1940,8 @@ main {
 
 .modal__body {
   color: var(--clr-fg);
+  max-height: calc(100vh - 6rem);
+  overflow: auto;
 }
 
 @media (max-width: 600px) {
@@ -1950,7 +1952,11 @@ main {
   .modal__dialog {
     margin: 1rem auto;
     max-height: calc(100vh - 2rem);
-    padding: 1.25rem;
+    padding: 1.25rem 1.25rem 1rem 1.25rem;
+  }
+
+  .modal__body {
+    max-height: calc(100vh - 4rem);
   }
 }
 
