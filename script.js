@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const modal = document.getElementById("modal");
   const modalBody = document.getElementById("modalBody");
   const readMoreButtons = document.querySelectorAll(
-    ".education__read-more, .experience__read-more"
+    ".education__read-more, .experience__read-more, .about__read-more"
   );
 
   function openModal(html) {
@@ -220,11 +220,14 @@ document.addEventListener("DOMContentLoaded", function () {
   readMoreButtons.forEach((btn) => {
     btn.addEventListener("click", function () {
       const container =
-        this.closest(".education__item") || this.closest(".experience__item");
+        this.closest(".education__item") ||
+        this.closest(".experience__item") ||
+        this.closest(".about__expertise");
       if (!container) return;
-      const content = container.querySelector(
-        ".education__content, .experience__content"
-      );
+      const content =
+        container.querySelector(
+          ".education__content, .experience__content, .about__expertise-grid"
+        ) || container;
       if (!content) return;
       openModal(content.innerHTML);
     });

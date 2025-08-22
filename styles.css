@@ -1012,6 +1012,29 @@ main {
   margin: 0;
 }
 
+/* Collapsed Core Expertise */
+.about__content--collapsed {
+  max-height: 280px;
+  overflow: hidden;
+  position: relative;
+}
+
+.about__content--collapsed::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 80px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--clr-bg-alt));
+}
+
+.about__actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
 /* Responsive adjustments for about section */
 @media (max-width: 768px) {
   .about__highlights {
