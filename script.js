@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const modal = document.getElementById("modal");
   const modalBody = document.getElementById("modalBody");
   const readMoreButtons = document.querySelectorAll(
-    ".education__read-more, .experience__read-more, .about__read-more"
+    ".education__read-more, .experience__read-more, .about__read-more, .skills__read-more"
   );
 
   function openModal(html) {
@@ -222,11 +222,12 @@ document.addEventListener("DOMContentLoaded", function () {
       const container =
         this.closest(".education__item") ||
         this.closest(".experience__item") ||
-        this.closest(".about__expertise");
+        this.closest(".about__expertise") ||
+        this.closest("#skills");
       if (!container) return;
       const content =
         container.querySelector(
-          ".education__content, .experience__content, .about__expertise-grid"
+          ".education__content, .experience__content, .about__expertise-grid, .skills__content"
         ) || container;
       if (!content) return;
       openModal(content.innerHTML);

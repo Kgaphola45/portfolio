@@ -1318,6 +1318,29 @@ main {
   color: var(--clr-bg);
 }
 
+/* Collapsed Technical Skills */
+.skills__content--collapsed {
+  max-height: 380px;
+  overflow: hidden;
+  position: relative;
+}
+
+.skills__content--collapsed::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 90px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--clr-bg));
+}
+
+.skills__actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
 /* Responsive adjustments for skills section */
 @media (max-width: 768px) {
   .skills__container {
