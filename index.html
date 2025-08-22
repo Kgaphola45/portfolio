@@ -284,7 +284,7 @@
               </div>
             </div>
 
-            <div class="education__content">
+            <div class="education__content education__content--collapsed">
               <div class="education__description">
                 <p>
                   Comprehensive software development program focusing on modern
@@ -366,6 +366,16 @@
                 </ul>
               </div>
             </div>
+
+            <div class="education__actions">
+              <button
+                class="btn btn--outline education__read-more"
+                type="button"
+              >
+                <i class="fas fa-book-open"></i>
+                Read more
+              </button>
+            </div>
           </div>
 
           <div class="education__item">
@@ -395,7 +405,7 @@
               </div>
             </div>
 
-            <div class="education__content">
+            <div class="education__content education__content--collapsed">
               <div class="education__description">
                 <p>
                   Foundation program in IT support services covering networking
@@ -474,6 +484,16 @@
                   </li>
                 </ul>
               </div>
+            </div>
+
+            <div class="education__actions">
+              <button
+                class="btn btn--outline education__read-more"
+                type="button"
+              >
+                <i class="fas fa-book-open"></i>
+                Read more
+              </button>
             </div>
           </div>
         </div>
@@ -897,6 +917,28 @@
         <a aria-label="Scroll up" href="#top">
           <i aria-hidden="true" class="fas fa-arrow-up"></i>
         </a>
+      </div>
+    </div>
+
+    <!-- Modal: Education Details -->
+    <div
+      id="modal"
+      class="modal"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="false"
+    >
+      <div class="modal__overlay" data-modal-close></div>
+      <div class="modal__dialog" role="document">
+        <button
+          class="modal__close"
+          type="button"
+          aria-label="Close"
+          data-modal-close
+        >
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal__body" id="modalBody"></div>
       </div>
     </div>
 

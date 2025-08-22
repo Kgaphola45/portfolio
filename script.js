@@ -180,3 +180,48 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// Education modal: expand full details on demand
+document.addEventListener("DOMContentLoaded", function () {
+  const modal = document.getElementById("modal");
+  const modalBody = document.getElementById("modalBody");
+  const readMoreButtons = document.querySelectorAll(".education__read-more");
+
+  function openModal(html) {
+    modalBody.innerHTML = html;
+    modal.classList.add("modal--open");
+    modal.setAttribute("aria-hidden", "false");
+    modal.setAttribute("aria-modal", "true");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeModal() {
+    modal.classList.remove("modal--open");
+    modal.setAttribute("aria-hidden", "true");
+    modal.setAttribute("aria-modal", "false");
+    document.body.style.overflow = "";
+    modalBody.innerHTML = "";
+  }
+
+  modal.addEventListener("click", function (e) {
+    if (e.target.closest("[data-modal-close]")) {
+      closeModal();
+    }
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && modal.classList.contains("modal--open")) {
+      closeModal();
+    }
+  });
+
+  readMoreButtons.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      const educationItem = this.closest(".education__item");
+      if (!educationItem) return;
+      const content = educationItem.querySelector(".education__content");
+      if (!content) return;
+      openModal(content.innerHTML);
+    });
+  });
+});

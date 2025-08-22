@@ -652,6 +652,29 @@ main {
   margin-bottom: 0;
 }
 
+/* Collapsed content helper */
+.education__content--collapsed {
+  max-height: 260px;
+  overflow: hidden;
+  position: relative;
+}
+
+.education__content--collapsed::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 80px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--clr-bg-alt));
+}
+
+.education__actions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
 /* Responsive adjustments for education section */
 @media (max-width: 768px) {
   .education__container {
@@ -1825,6 +1848,64 @@ main {
   background-color: transparent;
   font-size: 1.8rem;
   transition: transform 0.2s ease-in-out;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 1000;
+}
+
+.modal--open {
+  display: block;
+}
+
+.modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+}
+
+.modal__dialog {
+  position: relative;
+  max-width: 900px;
+  width: calc(100% - 2rem);
+  max-height: calc(100vh - 4rem);
+  margin: 2rem auto;
+  background: var(--clr-bg-alt);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  overflow: auto;
+  padding: 2rem;
+}
+
+.modal__close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: transparent;
+  border: none;
+  color: var(--clr-fg);
+  font-size: 1.25rem;
+}
+
+.modal__body {
+  color: var(--clr-fg);
+}
+
+@media (max-width: 600px) {
+  .education__content--collapsed {
+    max-height: 200px;
+  }
+
+  .modal__dialog {
+    margin: 1rem auto;
+    max-height: calc(100vh - 2rem);
+    padding: 1.25rem;
+  }
 }
 
 @media (max-width: 600px) {
