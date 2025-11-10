@@ -2,7 +2,7 @@
 
 A modern, responsive personal portfolio built to showcase my **skills**, **projects**, and **professional experience** in **Cloud Administration**, **IT Support**, and **Software Development**.
 
-🌐 **Live Site:** [kgaphola.netlify.app](https://kgaphola.netlify.app)
+🌐 **Live Site:** [kgaphola.vercel.app](https://kgaphola.vercel.app)
 
 ---
 
@@ -23,7 +23,7 @@ This portfolio highlights my journey as an **IT Support and Cloud Operations Spe
 - **CSS3 / SCSS** – Clean, modern, and responsive styling
 - **JavaScript (ES6)** – Smooth interactivity and animations
 - **Font Awesome** – Elegant icons throughout the site
-- **Netlify** – Hosting and continuous deployment
+- **vercel** – Hosting and continuous deployment
 
 ---
 
