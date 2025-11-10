@@ -1784,19 +1784,20 @@ main {
 
 .soft-skills__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
   margin-top: 3rem;
 }
 
 .soft-skill-item {
   background-color: var(--clr-bg);
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 12px;
   box-shadow: var(--shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
   border: 1px solid transparent;
+  overflow: hidden;
 }
 
 .soft-skill-item:hover {
@@ -1806,9 +1807,9 @@ main {
 }
 
 .soft-skill-item i {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--clr-primary);
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   display: block;
   background: linear-gradient(135deg, var(--clr-primary), #64b5f6);
   background-clip: text;
@@ -1817,17 +1818,20 @@ main {
 }
 
 .soft-skill-item h4 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
   color: var(--clr-fg-alt);
+  line-height: 1.3;
 }
 
 .soft-skill-item p {
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   color: var(--clr-fg);
-  line-height: 1.6;
+  line-height: 1.5;
   margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /* Responsive Soft Skills */
@@ -1843,19 +1847,23 @@ main {
   }
   
   .soft-skill-item {
-    padding: 1.5rem;
+    padding: 1rem;
   }
   
   .soft-skill-item i {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   
   .soft-skill-item h4 {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
+  }
+  
+  .soft-skill-item h4 {
+    font-size: 0.95rem;
   }
   
   .soft-skill-item p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 
