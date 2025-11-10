@@ -209,21 +209,21 @@ button {
 }
 
 .header {
-  height: 8em;
-  max-width: 1100px;
-  width: 95%;
+  height: 6em;
+  width: 100%;
+  padding: 0 2rem;
   margin: 0 auto;
   justify-content: space-between;
 }
 
 main {
-  max-width: 1100px;
-  width: 95%;
+  width: 100%;
+  padding: 0 2rem;
   margin: 0 auto;
 }
 
 .section {
-  margin-top: 5em;
+  margin-top: 4em;
 }
 
 .section__title {
@@ -234,14 +234,14 @@ main {
 
 /* Experience Section Styles */
 .experience__container {
-  max-width: 900px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .experience__item {
   background: var(--clr-bg-alt);
   border-radius: 16px;
-  padding: 2.5rem;
+  padding: 2rem 1.5rem;
   box-shadow: var(--shadow);
   border: 1px solid transparent;
   transition: all 0.3s ease;
@@ -332,7 +332,7 @@ main {
 
 .experience__category {
   margin-bottom: 1.5rem;
-  padding: 1.5rem;
+  padding: 1.2rem;
   background: var(--clr-bg);
   border-radius: 12px;
   border-left: 4px solid var(--clr-primary);
@@ -452,7 +452,7 @@ main {
 
 /* Education Section Styles */
 .education__container {
-  max-width: 1000px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -462,7 +462,7 @@ main {
 .education__item {
   background: var(--clr-bg-alt);
   border-radius: 16px;
-  padding: 2.5rem;
+  padding: 2rem 1.5rem;
   box-shadow: var(--shadow);
   border: 1px solid transparent;
   transition: all 0.3s ease;
@@ -557,7 +557,7 @@ main {
 
 .education__description {
   background: var(--clr-bg);
-  padding: 1.5rem;
+  padding: 1.2rem;
   border-radius: 12px;
   border-left: 4px solid var(--clr-primary);
 }
@@ -571,7 +571,7 @@ main {
 
 .education__courses {
   background: var(--clr-bg);
-  padding: 1.5rem;
+  padding: 1.2rem;
   border-radius: 12px;
   border-left: 4px solid var(--clr-primary);
 }
@@ -628,7 +628,7 @@ main {
 
 .education__achievements {
   background: var(--clr-bg);
-  padding: 1.5rem;
+  padding: 1.2rem;
   border-radius: 12px;
   border-left: 4px solid var(--clr-primary);
 }
@@ -869,7 +869,7 @@ main {
 }
 
 .about__desc {
-  max-width: 600px;
+  width: 100%;
   margin: 0 auto 2rem;
   color: var(--clr-fg);
   font-size: 1.1rem;
@@ -880,7 +880,7 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
-  max-width: 800px;
+  width: 100%;
   margin: 0 auto 2.5rem;
   padding: 0 1rem;
 }
@@ -956,7 +956,7 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
-  max-width: 1000px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -1135,7 +1135,7 @@ main {
 }
 
 .projects__grid {
-  max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
@@ -1177,8 +1177,7 @@ main {
 }
 
 .skills__list {
-  max-width: 450px;
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -1190,7 +1189,7 @@ main {
   border-radius: 16px;
   padding: 3rem 2rem;
   margin: 3rem auto;
-  max-width: 1000px;
+  width: 100%;
   box-shadow: var(--shadow);
 }
 
@@ -1370,7 +1369,7 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto 3rem;
   padding: 0 1rem;
 }
@@ -1447,7 +1446,7 @@ main {
 
 /* Soft Skills Section */
 .soft-skills {
-  max-width: 1000px;
+  width: 100%;
   margin: 3rem auto 0;
   text-align: center;
   padding: 2.5rem;
@@ -1538,7 +1537,7 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto 3rem;
   padding: 0 1rem;
 }
@@ -1611,7 +1610,7 @@ main {
 }
 
 .skills__soft-skills {
-  max-width: 1000px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   padding: 0 1rem;
@@ -1777,7 +1776,7 @@ main {
 }
 
 .soft-skills__container {
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -1891,7 +1890,7 @@ main {
 
 .contact__subtitle {
   text-align: center;
-  max-width: 600px;
+  width: 100%;
   margin: 0 auto 3rem;
   color: var(--clr-fg);
   font-size: 1.1rem;
@@ -1902,7 +1901,6 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   width: 100%;
-  max-width: 800px;
   margin-bottom: 3rem;
 }
 
@@ -2001,7 +1999,6 @@ main {
 
 .contact__form-container {
   width: 100%;
-  max-width: 600px;
   margin-bottom: 3rem;
 }
 
@@ -2209,8 +2206,7 @@ main {
 }
 
 .footer__content {
-  max-width: 1100px;
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -2307,8 +2303,7 @@ main {
 .footer__bottom {
   border-top: 1px solid var(--clr-bg);
   padding-top: 2rem;
-  max-width: 1100px;
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -2519,7 +2514,7 @@ main {
 
 /* Tools & Technologies Section Styles */
 .tools__container {
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -2637,7 +2632,7 @@ main {
 
 /* Testimonials & References Section Styles */
 .testimonials__container {
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
 }
