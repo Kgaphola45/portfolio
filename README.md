@@ -42,11 +42,9 @@ This portfolio highlights my journey as an **IT Support and Cloud Operations Spe
 
 The portfolio is organized into several key sections that provide a comprehensive view of my professional capabilities:
 
-**Home / About** - This section serves as an introduction with a professional summary highlighting my background in IT support and cloud operations. It showcases key achievements and provides an overview of my technical expertise and career focus.
+**Home /** - This section serves as an introduction with a professional summary highlighting my background in IT support and cloud operations. It showcases key achievements and provides an overview of my technical expertise and career focus.
 
 **Skills** - A detailed breakdown of my technical competencies organized into categorized areas including Cloud Administration, Networking & Security, Automation & Scripting, and Software Development. This section features interactive elements that allow visitors to explore specific skills within each category.
-
-**Projects** - This area displays key personal and academic projects that demonstrate hands-on experience and technical depth. Each project includes descriptions, technologies used, and outcomes achieved, showcasing practical application of my skills in real-world scenarios.
 
 **Experience** - A chronological timeline of my professional journey, starting with my current role at TonTrac Systems Analytics. This section details responsibilities, accomplishments, and career progression in the IT and cloud operations field.
 
