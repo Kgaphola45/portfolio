@@ -144,6 +144,12 @@ button {
   transition: transform 0.2s ease-in-out;
 }
 
+/* Icon spacing inside buttons */
+.btn i {
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
 .btn--outline {
   color: var(--clr-primary);
   border: 2px solid var(--clr-primary);
