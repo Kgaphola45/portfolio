@@ -1325,6 +1325,8 @@ main {
   }
   
   .stack__items {
+    display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     padding: 0 1rem 0 3.5rem;
     justify-content: flex-start;
