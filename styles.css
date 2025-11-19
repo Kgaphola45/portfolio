@@ -1218,12 +1218,11 @@ main {
 .stack__timeline::before {
   content: '';
   position: absolute;
-  left: 50%;
+  left: 30px;
   top: 0;
   bottom: 0;
   width: 3px;
   background: linear-gradient(to bottom, var(--clr-primary), #64b5f6);
-  transform: translateX(-50%);
   border-radius: 2px;
 }
 
@@ -1237,8 +1236,10 @@ main {
 }
 
 .stack__year-header {
-  text-align: center;
+  text-align: left;
   margin-bottom: 2rem;
+  padding-left: 80px;
+  position: relative;
 }
 
 .stack__year-title {
@@ -1254,22 +1255,34 @@ main {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+.stack__year-title::before {
+  content: '';
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  width: 50px;
+  height: 3px;
+  background: var(--clr-primary);
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
 .stack__year-desc {
-  max-width: 600px;
-  margin: 1.5rem auto 0;
+  max-width: 800px;
+  margin: 1rem 0 0 0;
   color: var(--clr-fg);
   font-size: 1rem;
   line-height: 1.6;
-  text-align: center;
+  text-align: left;
 }
 
 .stack__items {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem 4rem;
-  padding: 0 2rem;
-  max-width: 900px;
-  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 0 0 0 80px;
+  max-width: 100%;
+  margin: 0;
   position: relative;
   z-index: 1;
 }
@@ -1284,8 +1297,8 @@ main {
   position: relative;
   overflow: hidden;
   width: 100%;
-  max-width: 300px;
-  margin: 0 auto;
+  max-width: none;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1353,16 +1366,15 @@ main {
   }
   
   .stack__items {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    padding: 0 1rem 0 3.5rem;
-    justify-content: flex-start;
+    padding: 0 0 0 3.5rem;
   }
   
   .stack__item {
     padding: 1.5rem 1rem;
-    width: 140px;
+    width: 100%;
   }
   
   .stack__icon {
@@ -1389,13 +1401,14 @@ main {
   }
   
   .stack__items {
-    padding: 0 0.5rem 0 2.5rem;
+    padding: 0 0 0 2.5rem;
+    grid-template-columns: 1fr;
   }
   
   .stack__item {
     padding: 1.2rem 0.5rem;
-    width: calc(50% - 0.8rem);
-    min-width: 120px;
+    width: 100%;
+    min-width: 0;
   }
   
   .stack__icon {
