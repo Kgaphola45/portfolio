@@ -1328,6 +1328,14 @@ main {
   margin-top: 0.5rem;
 }
 
+.stack__item-desc {
+  font-size: 0.85rem;
+  color: var(--clr-fg);
+  margin-top: 0.5rem;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
 /* Responsive Stack Roadmap */
 @media (max-width: 768px) {
   .stack {
