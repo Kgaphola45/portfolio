@@ -2645,6 +2645,7 @@ main {
 
   .display-nav-list {
     width: 100%;
+    z-index: 100;
   }
 
   .nav__list-item {
