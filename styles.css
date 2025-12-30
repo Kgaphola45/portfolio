@@ -3530,10 +3530,10 @@ main {
 
 .modal__dialog {
   position: relative;
-  width: auto;
+  width: 90%;
   margin: 1.75rem auto;
   pointer-events: none;
-  max-width: 800px;
+  max-width: 1000px;
   transition: transform 0.3s ease-out;
   transform: translate(0, -50px);
 }
@@ -3562,19 +3562,21 @@ main {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  background: transparent;
+  background: var(--clr-primary);
   border: 0;
   font-size: 1.5rem;
-  color: var(--clr-fg);
+  color: #fff;
   cursor: pointer;
   transition: all 0.2s ease;
-  z-index: 10;
-  width: 40px;
-  height: 40px;
+  z-index: 100;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  pointer-events: auto;
 }
 
 .modal__close:hover {
