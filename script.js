@@ -65,17 +65,15 @@ if (contactForm) {
   contactForm.addEventListener("submit", handleContactSubmit);
 }
 
-function handleContactSubmit(e) {
+async function handleContactSubmit(e) {
   e.preventDefault();
 
-  // Get form data
   const formData = new FormData(contactForm);
   const name = formData.get("name");
   const email = formData.get("email");
   const subject = formData.get("subject");
   const message = formData.get("message");
 
-  // Basic validation
   if (!name || !email || !subject || !message) {
     showNotification("Please fill in all fields", "error");
     return;
@@ -86,30 +84,30 @@ function handleContactSubmit(e) {
     return;
   }
 
-  // Simulate form submission (in real implementation, this would send to a server)
   showNotification("Sending message...", "info");
 
-  // Simulate API call delay
-  setTimeout(() => {
-    // For demo purposes, we'll just show a success message
-    // In production, you'd send this data to your backend
-    showNotification(
-      "Message sent successfully! I'll get back to you soon.",
-      "success"
-    );
-
-    // Reset form
-    contactForm.reset();
-
-    // Log the contact attempt (for demo purposes)
-    console.log("Contact Form Submission:", {
-      name,
-      email,
-      subject,
-      message,
-      timestamp: new Date().toISOString(),
+  try {
+    const response = await fetch(contactForm.action, {
+      method: contactForm.method,
+      body: formData,
+      headers: {
+        Accept: "application/json",
+      },
     });
-  }, 2000);
+
+    if (response.ok) {
+      showNotification(
+        "Message sent successfully! I'll get back to you soon.",
+        "success"
+      );
+      contactForm.reset();
+      return;
+    }
+
+    showNotification("Something went wrong. Please try again.", "error");
+  } catch (error) {
+    showNotification("Unable to send. Please try again later.", "error");
+  }
 }
 
 function isValidEmail(email) {
