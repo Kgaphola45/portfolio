@@ -98,7 +98,7 @@ async function handleContactSubmit(e) {
     if (response.ok) {
       showNotification(
         "Message sent successfully! I'll get back to you soon.",
-        "success"
+        "success",
       );
       contactForm.reset();
       return;
@@ -162,7 +162,7 @@ function getNotificationIcon(type) {
 // Add smooth scrolling for contact form focus
 document.addEventListener("DOMContentLoaded", function () {
   const formInputs = document.querySelectorAll(
-    ".contact__form input, .contact__form textarea"
+    ".contact__form input, .contact__form textarea",
   );
 
   formInputs.forEach((input) => {
@@ -184,7 +184,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const modal = document.getElementById("modal");
   const modalBody = document.getElementById("modalBody");
   const readMoreButtons = document.querySelectorAll(
-    ".education__read-more, .experience__read-more, .about__read-more, .skills__read-more"
+    ".education__read-more, .experience__read-more, .about__read-more, .skills__read-more",
   );
 
   function openModal(html) {
@@ -225,7 +225,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (!container) return;
       const content =
         container.querySelector(
-          ".education__content, .experience__content, .about__expertise-grid, .skills__content"
+          ".education__content, .experience__content, .about__expertise-grid, .skills__content",
         ) || container;
       if (!content) return;
       openModal(content.innerHTML);
