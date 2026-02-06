@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -45,6 +45,9 @@
           </li>
           <li class="nav__list-item">
             <a class="link link--nav" href="#experience">Experience</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
           </li>
           <li class="nav__list-item">
             <a class="link link--nav" href="#skills">Skills</a>
@@ -81,12 +84,10 @@
             </h1>
             <h2 class="about__role">Help Desk Technician</h2>
             <p class="about__desc">
-              Helpdesk Support professional at TonTrac Systems Analytics,
-              specializing in cloud administration, IT infrastructure
-              management, and technical support for mission-critical systems.
-              Demonstrated success in maintaining 99.9% system uptime through
-              proactive problem-solving, effective incident resolution, and
-              continuous process improvement.
+              Help Desk Technician specializing in cloud operations, monitoring,
+              and incident response for logistics systems. I keep 50+ remote
+              sites running at 99.9% uptime and automate support workflows with
+              PowerShell.
             </p>
             <div class="about__contact center">
               <a href="#contact" class="btn btn--outline">
@@ -94,12 +95,12 @@
                 Get In Touch
               </a>
               <a
-                href="CV/Emmanenuel_Kgaphola_CV.docx"
+                href="CV/Emmanuel_Kgaphola_CV.docx"
                 class="btn btn--outline"
-                download="Emmanenuel_Kgaphola_CV.docx"
+                download="Emmanuel_Kgaphola_CV.docx"
               >
                 <i class="fas fa-file-download"></i>
-                Resume
+                Download CV
               </a>
             </div>
           </div>
@@ -338,6 +339,101 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Selected Work</h2>
+        <p class="section__subtitle">
+          A few case studies that highlight how I improve reliability, automate
+          support, and deliver clear operational reporting.
+        </p>
+
+        <div class="projects__grid">
+          <article class="project-card">
+            <div class="project-card__header">
+              <div class="project-card__icon">
+                <i class="fas fa-satellite-dish"></i>
+              </div>
+              <div>
+                <h3 class="project-card__title">Uptime Monitoring Playbook</h3>
+                <p class="project-card__meta">
+                  Monitoring | Zabbix, SolarWinds
+                </p>
+              </div>
+            </div>
+            <p class="project-card__desc">
+              Standardized alert triage and escalation steps to protect
+              mission-critical logistics systems across distributed sites.
+            </p>
+            <ul class="project-card__bullets">
+              <li>Maintained 99.9% uptime across 50+ remote sites</li>
+              <li>Reduced repeat incidents with clearer escalation paths</li>
+            </ul>
+            <div class="project-card__tags">
+              <span>Monitoring</span>
+              <span>Incident Response</span>
+              <span>SLA</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__header">
+              <div class="project-card__icon">
+                <i class="fas fa-terminal"></i>
+              </div>
+              <div>
+                <h3 class="project-card__title">PowerShell Automation Pack</h3>
+                <p class="project-card__meta">Automation | Azure AD, RBAC</p>
+              </div>
+            </div>
+            <p class="project-card__desc">
+              Built scripts to streamline user onboarding, permission updates,
+              and recurring support workflows.
+            </p>
+            <ul class="project-card__bullets">
+              <li>Accelerated account provisioning and access changes</li>
+              <li>Improved consistency across support handoffs</li>
+            </ul>
+            <div class="project-card__tags">
+              <span>PowerShell</span>
+              <span>Azure AD</span>
+              <span>Automation</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__header">
+              <div class="project-card__icon">
+                <i class="fas fa-chart-bar"></i>
+              </div>
+              <div>
+                <h3 class="project-card__title">Operations Reporting Suite</h3>
+                <p class="project-card__meta">Reporting | Excel, Cloud Tools</p>
+              </div>
+            </div>
+            <p class="project-card__desc">
+              Delivered recurring operational dashboards for weighbridge and
+              logistics performance visibility.
+            </p>
+            <ul class="project-card__bullets">
+              <li>Built hourly, 12-hour, and monthly insights</li>
+              <li>Improved decision-making with clear KPIs</li>
+            </ul>
+            <div class="project-card__tags">
+              <span>Reporting</span>
+              <span>Excel</span>
+              <span>KPIs</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="projects__cta">
+          <a href="#contact" class="btn btn--outline">
+            <i class="fas fa-paper-plane"></i>
+            Discuss a project
+          </a>
         </div>
       </section>
 
@@ -1247,6 +1343,7 @@
           <ul class="footer__links">
             <li><a href="#education" class="footer__link">Education</a></li>
             <li><a href="#experience" class="footer__link">Experience</a></li>
+            <li><a href="#projects" class="footer__link">Projects</a></li>
             <li><a href="#skills" class="footer__link">Skills</a></li>
             <li><a href="#contact" class="footer__link">Contact</a></li>
           </ul>

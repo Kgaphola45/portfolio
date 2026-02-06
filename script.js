@@ -247,6 +247,8 @@ sr.reveal(".about__image-container", { origin: "right" });
 sr.reveal(".about__highlights", { delay: 500, interval: 100 });
 sr.reveal(".section__title", { interval: 100 });
 sr.reveal(".experience__item", { interval: 200 });
+sr.reveal(".project-card", { interval: 150 });
+sr.reveal(".projects__cta", { delay: 200 });
 sr.reveal(".education__item", { interval: 200 });
 sr.reveal(".skills__category", { interval: 100 });
 sr.reveal(".stack__year", { interval: 200 });
