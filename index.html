@@ -403,58 +403,49 @@
 
                         <!-- Panel 4: Daily Ops Report -->
                         <div class="proof-panel" id="tab-report">
-                            <div class="ops-table-wrap">
-                                <table class="ops-table">
-                                    <thead>
-                                        <tr>
-                                            <th>CONTROL AREA</th>
-                                            <th>METRIC / TARGET</th>
-                                            <th>STATUS</th>
-                                            <th>EXCEPTIONS &amp; ACTIONS TAKEN</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><strong>SQL Backups (All Sites)</strong></td>
-                                            <td>52 Databases / 100% Success</td>
-                                            <td><span class="status-pill ok">PASS (52/52)</span></td>
-                                            <td>All verified. Site #12 backup size verified against delta baseline.</td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Meraki Bandwidth (2-Hr)</strong></td>
-                                            <td>Uplink Saturation &lt; 85%</td>
-                                            <td><span class="status-pill ok">NORMAL</span></td>
-                                            <td>Bandwidth spot checks clean. Minor peak at 11:00 on Depot 03 (resolved).
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Cameras &amp; NVRs</strong></td>
-                                            <td>Weighbridge &amp; Main Gate Video</td>
-                                            <td><span class="status-pill ok">ONLINE</span></td>
-                                            <td>Secondary NVR on Node 07 rebooted cleanly; zero blind spots.</td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Action1 Patch Compliance</strong></td>
-                                            <td>Critical OS CVEs Patched</td>
-                                            <td><span class="status-pill ok">98.6% AUDITED</span></td>
-                                            <td>3 machines offline during maintenance window; scheduled for
-                                                auto-catchup.</td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>PABX Voice Quality</strong></td>
-                                            <td>Jitter &lt; 30ms / 0 dropped</td>
-                                            <td><span class="status-pill ok">NORMAL</span></td>
-                                            <td>Spot-check test calls clear to 4 remote dispatch points.</td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Open High-Priority Risks</strong></td>
-                                            <td>Hardware &amp; Environmental</td>
-                                            <td><span class="status-pill warn">1 TRACKED</span></td>
-                                            <td>Generator fuel float sensor replacement logged under ticket TSK-4019.
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div class="ops-cards-grid">
+                                <div class="ops-kpi-card">
+                                    <div class="kpi-top">
+                                        <span class="kpi-name"><i class="fas fa-database"></i> SQL Backups (All Sites)</span>
+                                        <span class="status-pill ok">52/52 PASS</span>
+                                    </div>
+                                    <p class="kpi-detail">All 52 remote site databases verified. Site #12 backup size verified against delta baseline.</p>
+                                </div>
+                                <div class="ops-kpi-card">
+                                    <div class="kpi-top">
+                                        <span class="kpi-name"><i class="fas fa-chart-line"></i> Meraki Bandwidth</span>
+                                        <span class="status-pill ok">&lt; 85% NORMAL</span>
+                                    </div>
+                                    <p class="kpi-detail">2-hour bandwidth spot checks clean. Minor 11:00 peak on Depot 03 investigated and cleared.</p>
+                                </div>
+                                <div class="ops-kpi-card">
+                                    <div class="kpi-top">
+                                        <span class="kpi-name"><i class="fas fa-shield-halved"></i> Action1 Patching</span>
+                                        <span class="status-pill ok">98.6% COMPLIANT</span>
+                                    </div>
+                                    <p class="kpi-detail">Critical OS CVEs deployed with zero unexpected reboots during live logistics operations.</p>
+                                </div>
+                                <div class="ops-kpi-card">
+                                    <div class="kpi-top">
+                                        <span class="kpi-name"><i class="fas fa-video"></i> Cameras &amp; NVRs</span>
+                                        <span class="status-pill ok">ONLINE (0 BLIND SPOTS)</span>
+                                    </div>
+                                    <p class="kpi-detail">Secondary NVR on Node 07 rebooted cleanly; weighbridge and gate feeds 100% operational.</p>
+                                </div>
+                                <div class="ops-kpi-card">
+                                    <div class="kpi-top">
+                                        <span class="kpi-name"><i class="fas fa-phone"></i> PABX Voice Quality</span>
+                                        <span class="status-pill ok">NORMAL (&lt; 30ms JITTER)</span>
+                                    </div>
+                                    <p class="kpi-detail">Spot-check test calls clear to 4 remote dispatch points with zero dropped frames.</p>
+                                </div>
+                                <div class="ops-kpi-card">
+                                    <div class="kpi-top">
+                                        <span class="kpi-name"><i class="fas fa-triangle-exclamation"></i> Open High-Priority Risks</span>
+                                        <span class="status-pill warn">1 TRACKED</span>
+                                    </div>
+                                    <p class="kpi-detail">Generator fuel float sensor replacement logged and tracked under ticket TSK-4019.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
