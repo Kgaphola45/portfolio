@@ -387,48 +387,78 @@ Process SPID 89 blocked by SPID 62 (ReportGeneratorService.exe).
             </div>
         </section>
 
-        <!-- 03: THE TOOLBOX -->
+        <!-- 04: THE TOOLBOX (PRIORITIZED 3-TIER ARCHITECTURE) -->
         <section class="section wrap" id="tools">
             <div class="sec-grid">
                 <div>
-                    <p class="mono sec-k">03 &middot; THE TOOLBOX</p>
-                    <h2 class="h2">Things I touch every week, and what I think of them.</h2>
+                    <p class="mono sec-k">04 &middot; THE TOOLBOX</p>
+                    <h2 class="h2">What I actually use to keep 50+ sites alive.</h2>
+                    <p class="sec-sub">Grouped strictly by operational criticality, not marketing brochures. 1-line tool &rarr; 1-line what I do with it and the downtime it prevents.</p>
                 </div>
                 <div class="sec-body">
-                    <ul class="tool-list">
-                        <li>
-                            <div><strong>Action1 &middot; Automated Patch Management</strong><span>Automated OS and software patch deployment, endpoint vulnerability mitigation, and compliance tracking across workstations and servers. Security patches scheduled and validated with strict change control so zero unexpected reboots hit production weighbridges.</span></div>
-                            <p class="mono tool-tag">PATCHING &middot; ACTION1</p>
-                        </li>
-                        <li>
-                            <div><strong>Odoo &middot; ITSM Ticketing &amp; Audit Governance</strong><span>Our operational nerve centre. Queue triage, incident escalations from First Line Support, change requests, and task tracking. If a fix isn&rsquo;t documented in Odoo with diagnostic evidence, log snippets, and clear resolution notes, it never happened.</span></div>
-                            <p class="mono tool-tag">TICKETING &middot; ODOO</p>
-                        </li>
-                        <li>
-                            <div><strong>Zabbix, SolarWinds &amp; Meraki Bandwidth</strong><span>My radar across 50+ remote mining and logistics sites. Monitoring server capacity, storage, power, temperature, and Meraki traffic every 2 hours. I tune alert thresholds with senior engineering to eliminate alert fatigue so real emergencies never get drowned out.</span></div>
-                            <p class="mono tool-tag">MONITORING &middot; DAILY</p>
-                        </li>
-                        <li>
-                            <div><strong>SQL Backups &amp; Database Health (All Sites)</strong><span>Daily verification of SQL backup success/failure, database integrity checks, and log reviews. Backups are critical priority: a backup you didn&rsquo;t verify isn&rsquo;t a backup, it&rsquo;s just a wish. Failures escalated straight to Dev &amp; IT Admin.</span></div>
-                            <p class="mono tool-tag">CRITICAL &middot; DAILY CONTROL</p>
-                        </li>
-                        <li>
-                            <div><strong>Azure AD / Entra ID + RBAC &amp; Provisioning</strong><span>User provisioning, role-based access control, security permissions, PC/laptop setups, and maintaining the hardware asset register. Setting permissions tight the first time so security doesn&rsquo;t have a meltdown later.</span></div>
-                            <p class="mono tool-tag">IDENTITY &amp; HARDWARE &middot; DAILY</p>
-                        </li>
-                        <li>
-                            <div><strong>PowerShell Automation Pack + Daily Ops Reporting</strong><span>Custom PowerShell scripts for account provisioning and recurring workflows, paired with Excel dashboard KPI suites. Generates the daily operational report (backups, outages, security alerts, high-priority risks, and inductions).</span></div>
-                            <p class="mono tool-tag">AUTOMATION &middot; FAVOURITE</p>
-                        </li>
-                        <li>
-                            <div><strong>Cameras, NVRs, PABX &amp; Remote Hands</strong><span>Daily camera &amp; NVR health checks, PABX VoIP call quality tests, network troubleshooting, and TeamViewer remote diagnostics for weighbridge &amp; gate applications. Hardware lies; packet dumps and system logs don&rsquo;t.</span></div>
-                            <p class="mono tool-tag">INFRASTRUCTURE &middot; CONSTANT</p>
-                        </li>
-                        <li>
-                            <div><strong>C#, Java, SQL, Git &middot; The Dev Roots</strong><span>IIE Diploma in Software Development: .NET Core, C#, Java, PHP, Kotlin, MySQL, and Azure SQL. Having a dev foundation means when Tier 1 escalates a broken application, I read the stack trace and SQL queries instead of randomly rebooting servers.</span></div>
-                            <p class="mono tool-tag">DEV &middot; ROOTS</p>
-                        </li>
-                    </ul>
+                    <div class="toolbox-3col">
+                        <!-- COLUMN 1: DAILY -->
+                        <div class="tool-group">
+                            <div class="group-header">
+                                <span class="group-tag daily"><i class="fas fa-fire-flame-curved"></i> DAILY CRITICAL</span>
+                                <h3 class="group-title">If this fails, trucks stop</h3>
+                            </div>
+                            <div class="tool-items">
+                                <div class="tool-entry">
+                                    <div class="tool-name"><i class="fas fa-ticket"></i> Odoo ITSM</div>
+                                    <div class="tool-desc">Queue triage, escalations, 100% ticket hygiene. No ticket = didn&rsquo;t happen.</div>
+                                </div>
+                                <div class="tool-entry">
+                                    <div class="tool-name"><i class="fas fa-database"></i> SQL Backups (All Sites)</div>
+                                    <div class="tool-desc">Daily verification across all sites. Failure = immediate escalation to Dev with logs. A backup you didn&rsquo;t verify is just a wish.</div>
+                                </div>
+                                <div class="tool-entry">
+                                    <div class="tool-name"><i class="fas fa-network-wired"></i> Zabbix / Meraki / SolarWinds</div>
+                                    <div class="tool-desc">2-hour spot checks on bandwidth, temp, power, storage. Tuned thresholds to kill alert fatigue (88% false alert reduction).</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- COLUMN 2: WEEKLY -->
+                        <div class="tool-group">
+                            <div class="group-header">
+                                <span class="group-tag weekly"><i class="fas fa-shield-check"></i> WEEKLY CONTROLS</span>
+                                <h3 class="group-title">Keeps us compliant &amp; secure</h3>
+                            </div>
+                            <div class="tool-items">
+                                <div class="tool-entry">
+                                    <div class="tool-name"><i class="fas fa-id-badge"></i> Azure AD / Entra ID</div>
+                                    <div class="tool-desc">RBAC, user provisioning, asset register. Permissions tight first time.</div>
+                                </div>
+                                <div class="tool-entry">
+                                    <div class="tool-name"><i class="fas fa-arrows-rotate"></i> Action1</div>
+                                    <div class="tool-desc">Patch compliance across endpoints and servers. Zero surprise reboots during live ops.</div>
+                                </div>
+                                <div class="tool-entry">
+                                    <div class="tool-name"><i class="fas fa-terminal"></i> PowerShell + Excel</div>
+                                    <div class="tool-desc">Automated haulier onboarding &amp; daily ops report (backups, outages, risks). Saved ~5 hrs/week of manual entry.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- COLUMN 3: INFRA & ROOTS -->
+                        <div class="tool-group">
+                            <div class="group-header">
+                                <span class="group-tag superpower"><i class="fas fa-bolt"></i> INFRA &amp; ROOTS</span>
+                                <h3 class="group-title">Diagnostic superpower</h3>
+                            </div>
+                            <div class="tool-items">
+                                <div class="tool-entry">
+                                    <div class="tool-name"><i class="fas fa-video"></i> Remote Hands</div>
+                                    <div class="tool-desc">Cameras, NVRs, PABX, TeamViewer diagnostics for weighbridge/gate apps. Hardware lies; logs don&rsquo;t.</div>
+                                </div>
+                                <div class="tool-entry">
+                                    <div class="tool-name"><i class="fas fa-code"></i> Dev Foundation</div>
+                                    <div class="tool-desc">IIE Diploma (C#, Java, SQL). I read stack traces and SQL queries, I don&rsquo;t just reboot.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
