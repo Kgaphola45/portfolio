@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const toTop = document.getElementById('scrollTopBtn');
     const links = [...document.querySelectorAll('.nav__link')];
-    const secs = ['shift', 'proof', 'tools', 'how', 'back', 'contact'].map(id => document.getElementById(id)).filter(Boolean);
+    const secs = ['for-you', 'shift', 'proof', 'tools', 'how', 'back', 'contact'].map(id => document.getElementById(id)).filter(Boolean);
     
     function onScroll() {
         const y = window.scrollY;
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
             io.unobserve(e.target);
         }
     }), { threshold: .1 });
-    document.querySelectorAll('.fit,.rules-grid,.rule-card,.t-row,.tool-list li,.card,.photo,.margin-note,.cform,.metrics-bar,.term-win,.ops-table-wrap,.case-card,.hire-banner').forEach(el => {
+    document.querySelectorAll('.fit,.fit-card,.rules-grid,.rule-card,.t-row,.tool-group,.card,.photo,.margin-note,.cform,.metrics-bar,.term-win,.ops-table-wrap,.case-card,.hire-banner').forEach(el => {
         el.classList.add('reveal');
         io.observe(el);
     });
