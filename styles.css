@@ -1361,4 +1361,173 @@ a {
     color: var(--ink2);
     font-size: .86rem;
 }
+
+/* Sticky Quick-Action Bar for Recruiters / Hiring Managers */
+.sticky-hire-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #1c1917;
+    border-top: 2px solid var(--red);
+    padding: 10px 16px;
+    z-index: 90;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.35);
+}
+.sticky-hire-bar__in {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+.sticky-hire-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #f5f0e3;
+    font-size: .88rem;
+}
+.sticky-hire-info .ok-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #22c55e;
+    box-shadow: 0 0 8px #22c55e;
+    flex-shrink: 0;
+}
+.sticky-meta {
+    font-family: var(--mono);
+    font-size: .75rem;
+    color: #a8a29e;
+    background: #292524;
+    padding: 2px 8px;
+    border-radius: 4px;
+    border: 1px solid #44403c;
+}
+.sticky-hire-actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.sticky-hire-actions .btn {
+    padding: 7px 14px;
+    font-size: .82rem;
+}
+
+/* Adjust scroll-to-top button so it doesn't overlap sticky footer */
+.to-top {
+    bottom: 70px;
+}
+
+/* Ops KPI Cards Grid (Mobile-First Screenshot Material) */
+.ops-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 12px;
+}
+.ops-kpi-card {
+    background: #1f1b16;
+    border: 1.5px solid #3d362c;
+    border-radius: 10px;
+    padding: 14px;
+    transition: transform .15s, border-color .15s;
+}
+.ops-kpi-card:hover {
+    border-color: #e8b08a;
+    transform: translateY(-2px);
+}
+.kpi-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+.kpi-name {
+    font-family: var(--mono);
+    font-size: .82rem;
+    font-weight: 700;
+    color: #f5f0e3;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.kpi-name i {
+    color: var(--red);
+}
+.kpi-detail {
+    font-size: .85rem;
+    color: #d1c8b4;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Homelab & Certifications Box */
+.growth-box {
+    margin-top: 20px;
+    background: var(--paper2);
+    border: 2px solid var(--line);
+    border-radius: var(--r);
+    padding: 18px 22px;
+    box-shadow: 4px 4px 0 var(--line);
+}
+.growth-header {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 10px;
+}
+.badge-growth {
+    display: inline-block;
+    font-size: .7rem;
+    font-weight: 700;
+    color: #1e40af;
+    background: #dbeafe;
+    border: 1px solid #93c5fd;
+    padding: 3px 8px;
+    border-radius: 4px;
+    width: fit-content;
+}
+.growth-header h4 {
+    font-family: var(--serif);
+    font-size: 1.05rem;
+    color: var(--ink);
+    margin: 0;
+}
+.growth-desc {
+    font-size: .9rem;
+    line-height: 1.6;
+    color: var(--ink2);
+    margin: 0;
+}
+.growth-desc strong {
+    color: var(--ink);
+}
+
+@media(max-width:640px) {
+    .sticky-hire-bar {
+        padding: 8px 12px;
+    }
+    .sticky-hire-bar__in {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+    .sticky-hire-info {
+        justify-content: space-between;
+        font-size: .8rem;
+    }
+    .sticky-hire-actions {
+        justify-content: space-between;
+    }
+    .sticky-hire-actions .btn {
+        flex: 1;
+        text-align: center;
+        padding: 6px 8px;
+        font-size: .75rem;
+    }
+}
+
 
