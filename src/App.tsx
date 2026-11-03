@@ -446,7 +446,7 @@ function ImpactSection() {
 }
 
 function ExperienceSection() {
-  const [selectedRole, setSelectedRole] = useState<"t1" | "t2">("t1");
+  const [selectedRole, setSelectedRole] = useState<"t2" | "t1">("t2");
 
   return (
     <section id="experience" className="py-24 border-t border-white/10 text-neutral-100 w-full">
@@ -463,16 +463,6 @@ function ExperienceSection() {
           {/* Role Toggle */}
           <div className="flex rounded-full bg-white/[0.06] backdrop-blur-md p-1 border border-white/15 self-start md:self-auto">
             <button
-              onClick={() => setSelectedRole("t1")}
-              className={`px-5 py-2 rounded-full text-xs sm:text-sm font-medium transition-all ${
-                selectedRole === "t1"
-                  ? "bg-white text-black shadow-lg"
-                  : "text-neutral-300 hover:text-white"
-              }`}
-            >
-              Help Desk Technician (Tier 1)
-            </button>
-            <button
               onClick={() => setSelectedRole("t2")}
               className={`px-5 py-2 rounded-full text-xs sm:text-sm font-medium transition-all ${
                 selectedRole === "t2"
@@ -482,10 +472,147 @@ function ExperienceSection() {
             >
               Tier 2 IT Support (Current)
             </button>
+            <button
+              onClick={() => setSelectedRole("t1")}
+              className={`px-5 py-2 rounded-full text-xs sm:text-sm font-medium transition-all ${
+                selectedRole === "t1"
+                  ? "bg-white text-black shadow-lg"
+                  : "text-neutral-300 hover:text-white"
+              }`}
+            >
+              Help Desk Technician (Tier 1)
+            </button>
           </div>
         </div>
 
-        {selectedRole === "t1" ? (
+        {selectedRole === "t2" ? (
+          <div className="mt-10 rounded-2xl bg-white/[0.06] backdrop-blur-xl border border-white/15 p-6 sm:p-10 shadow-2xl">
+            <div className="flex flex-wrap items-center justify-between gap-4 border-b border-white/10 pb-6">
+              <div>
+                <div className="flex items-center gap-3">
+                  <h3 className="text-2xl font-semibold text-white">Tier 2 IT Support Technician</h3>
+                  <span className="px-3 py-1 bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 rounded-full text-xs font-mono">
+                    TonTrac Systems Analytics (Current)
+                  </span>
+                </div>
+                <p className="text-sm text-neutral-300 mt-1">
+                  Primary Escalations &middot; Root Cause Analysis &middot; Multi-Environment Monitoring &middot; Patching &amp; Infrastructure Runbooks
+                </p>
+              </div>
+              <span className="text-xs font-mono text-neutral-400">50+ Distributed Sites &middot; 75+ Daily Tickets</span>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-6 mt-8">
+              {/* Pillar 1: Escalation & RCA */}
+              <div className="p-6 rounded-xl bg-white/[0.04] border border-white/10 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="h-2 w-2 rounded-full bg-indigo-400" />
+                    <span className="text-xs font-mono text-indigo-300 uppercase tracking-wider">Escalation &amp; Incident Diagnostics</span>
+                  </div>
+                  <h4 className="text-lg font-semibold text-white mb-3">Primary Escalation &amp; Permanent Corrective RCA</h4>
+                  <ul className="space-y-3 text-xs sm:text-sm text-neutral-300 leading-relaxed">
+                    <li className="flex items-start gap-2.5">
+                      <span className="text-emerald-400 font-bold">&#x2713;</span>
+                      <span>Serve as the primary escalation point for the IT Support Technicians and First Line Support.</span>
+                    </li>
+                    <li className="flex items-start gap-2.5">
+                      <span className="text-emerald-400 font-bold">&#x2713;</span>
+                      <span>Investigate, diagnose, and resolve complex application, hardware, and infrastructure incidents across distributed nodes.</span>
+                    </li>
+                    <li className="flex items-start gap-2.5">
+                      <span className="text-emerald-400 font-bold">&#x2713;</span>
+                      <span>Perform detailed root cause analysis (RCA) to identify underlying issues and implement permanent corrective actions with zero recurrence.</span>
+                    </li>
+                    <li className="flex items-start gap-2.5">
+                      <span className="text-emerald-400 font-bold">&#x2713;</span>
+                      <span>Identify recurring trends and issues to support problem management and continuous service improvement initiatives.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Pillar 2: Monitoring & SLA Alignment */}
+              <div className="p-6 rounded-xl bg-white/[0.04] border border-white/10 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="h-2 w-2 rounded-full bg-indigo-400" />
+                    <span className="text-xs font-mono text-indigo-300 uppercase tracking-wider">Telemetry &amp; SLA Compliance</span>
+                  </div>
+                  <h4 className="text-lg font-semibold text-white mb-3">Multi-Environment Monitoring &amp; Early Detection</h4>
+                  <ul className="space-y-3 text-xs sm:text-sm text-neutral-300 leading-relaxed">
+                    <li className="flex items-start gap-2.5">
+                      <span className="text-emerald-400 font-bold">&#x2713;</span>
+                      <span>Maintain monitoring platforms across cloud, on-prem, and client-site environments.</span>
+                    </li>
+                    <li className="flex items-start gap-2.5">
+                      <span className="text-emerald-400 font-bold">&#x2713;</span>
+                      <span>Configure alerts, thresholds, and dashboards to ensure early detection of performance degradation before calls escalate.</span>
+                    </li>
+                    <li className="flex items-start gap-2.5">
+                      <span className="text-emerald-400 font-bold">&#x2713;</span>
+                      <span>Ensure monitoring coverage aligns with availability targets and Service Level Agreements (SLAs).</span>
+                    </li>
+                    <li className="flex items-start gap-2.5">
+                      <span className="text-emerald-400 font-bold">&#x2713;</span>
+                      <span>Ensure all critical operational services meet defined security, availability, and reliability requirements.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Pillar 3: Patching, Routine Tasks & Readiness */}
+              <div className="p-6 rounded-xl bg-white/[0.04] border border-white/10 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="h-2 w-2 rounded-full bg-indigo-400" />
+                    <span className="text-xs font-mono text-indigo-300 uppercase tracking-wider">Patching &amp; Infrastructure Maintenance</span>
+                  </div>
+                  <h4 className="text-lg font-semibold text-white mb-3">Change Management &amp; Site Readiness</h4>
+                  <ul className="space-y-3 text-xs sm:text-sm text-neutral-300 leading-relaxed">
+                    <li className="flex items-start gap-2.5">
+                      <span className="text-emerald-400 font-bold">&#x2713;</span>
+                      <span>Implement scheduled operating system, firmware, and application patches in line with change management policies.</span>
+                    </li>
+                    <li className="flex items-start gap-2.5">
+                      <span className="text-emerald-400 font-bold">&#x2713;</span>
+                      <span>Oversee routine tasks including backup verification, restore testing, and system log reviews across 50+ sites.</span>
+                    </li>
+                    <li className="flex items-start gap-2.5">
+                      <span className="text-emerald-400 font-bold">&#x2713;</span>
+                      <span>Support infrastructure deployments, upgrades, and site readiness validation in close collaboration with project teams.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Pillar 4: Runbooks, Assets & Audit Evidence */}
+              <div className="p-6 rounded-xl bg-white/[0.04] border border-white/10 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="h-2 w-2 rounded-full bg-indigo-400" />
+                    <span className="text-xs font-mono text-indigo-300 uppercase tracking-wider">Runbooks, Assets &amp; Audits</span>
+                  </div>
+                  <h4 className="text-lg font-semibold text-white mb-3">Operational Evidence &amp; Lifecycle Controls</h4>
+                  <ul className="space-y-3 text-xs sm:text-sm text-neutral-300 leading-relaxed">
+                    <li className="flex items-start gap-2.5">
+                      <span className="text-emerald-400 font-bold">&#x2713;</span>
+                      <span>Maintain and update operational runbooks, support documentation, and &ldquo;as-built&rdquo; environment records.</span>
+                    </li>
+                    <li className="flex items-start gap-2.5">
+                      <span className="text-emerald-400 font-bold">&#x2713;</span>
+                      <span>Provide operational evidence and system reports to support internal and external audits.</span>
+                    </li>
+                    <li className="flex items-start gap-2.5">
+                      <span className="text-emerald-400 font-bold">&#x2713;</span>
+                      <span>Manage IT asset inventories, critical spares, and equipment lifecycles to minimize service disruption.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        ) : (
           <div className="mt-10 rounded-2xl bg-white/[0.06] backdrop-blur-xl border border-white/15 p-6 sm:p-10 shadow-2xl">
             <div className="flex flex-wrap items-center justify-between gap-4 border-b border-white/10 pb-6">
               <div>
@@ -593,49 +720,6 @@ function ExperienceSection() {
                     </p>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        ) : (
-          <div className="mt-10 rounded-2xl bg-white/[0.06] backdrop-blur-xl border border-white/15 p-6 sm:p-10 shadow-2xl">
-            <div className="flex flex-wrap items-center justify-between gap-4 border-b border-white/10 pb-6">
-              <div>
-                <div className="flex items-center gap-3">
-                  <h3 className="text-2xl font-semibold text-white">Tier 2 IT Support Technician</h3>
-                  <span className="px-3 py-1 bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 rounded-full text-xs font-mono">
-                    TonTrac Systems Analytics (Current)
-                  </span>
-                </div>
-                <p className="text-sm text-neutral-300 mt-1">
-                  Escalated Incidents &middot; Root Cause Analysis &middot; PowerShell Automation &middot; Action1 Patch Management
-                </p>
-              </div>
-              <span className="text-xs font-mono text-neutral-400">50+ Distributed Sites &middot; 75+ Daily Tickets</span>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-6 mt-8">
-              <div className="p-6 rounded-xl bg-white/[0.04] border border-white/10">
-                <span className="text-xs font-mono text-indigo-300 uppercase block mb-1">Tier 2 Escalations</span>
-                <h4 className="text-lg font-semibold text-white">Root Cause Diagnostics</h4>
-                <p className="text-xs sm:text-sm text-neutral-300 mt-2 leading-relaxed">
-                  Deep isolation of SQL deadlocks and blocking SPIDs, Entra ID sync faults, and branch application freezes with documented permanent prevention.
-                </p>
-              </div>
-
-              <div className="p-6 rounded-xl bg-white/[0.04] border border-white/10">
-                <span className="text-xs font-mono text-indigo-300 uppercase block mb-1">Automation &amp; Patching</span>
-                <h4 className="text-lg font-semibold text-white">PowerShell &amp; Action1</h4>
-                <p className="text-xs sm:text-sm text-neutral-300 mt-2 leading-relaxed">
-                  Automated user provisioning scripts saving 5+ hours weekly. Zero-daytime-disruption patch deployments across servers and remote workstations.
-                </p>
-              </div>
-
-              <div className="p-6 rounded-xl bg-white/[0.04] border border-white/10">
-                <span className="text-xs font-mono text-indigo-300 uppercase block mb-1">Telemetry &amp; Audit</span>
-                <h4 className="text-lg font-semibold text-white">Zabbix &amp; Daily Attestation</h4>
-                <p className="text-xs sm:text-sm text-neutral-300 mt-2 leading-relaxed">
-                  Reduced night-shift alert fatigue by 88% through threshold tuning. 100% daily verified sign-off for all 52 site SQL database backups.
-                </p>
               </div>
             </div>
           </div>
