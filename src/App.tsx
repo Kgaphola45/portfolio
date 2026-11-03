@@ -42,6 +42,9 @@ function Navbar() {
             <a href="#impact" className="transition-opacity hover:opacity-60">Impact</a>
           </li>
           <li>
+            <a href="#experience" className="transition-opacity hover:opacity-60">Experience</a>
+          </li>
+          <li>
             <a href="#evidence" className="transition-opacity hover:opacity-60">Evidence</a>
           </li>
           <li>
@@ -92,6 +95,7 @@ function Navbar() {
         aria-hidden={!open}
       >
         <a href="#impact" onClick={() => setOpen(false)} className="text-[28px] font-medium">Impact</a>
+        <a href="#experience" onClick={() => setOpen(false)} className="text-[28px] font-medium">Experience</a>
         <a href="#evidence" onClick={() => setOpen(false)} className="text-[28px] font-medium">Evidence &amp; RCA</a>
         <a href="#shift" onClick={() => setOpen(false)} className="text-[28px] font-medium">Daily Rhythm</a>
         <a href="#toolbox" onClick={() => setOpen(false)} className="text-[28px] font-medium">Toolbox</a>
