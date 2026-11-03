@@ -439,6 +439,206 @@ function ImpactSection() {
   );
 }
 
+function ExperienceSection() {
+  const [selectedRole, setSelectedRole] = useState<"t1" | "t2">("t1");
+
+  return (
+    <section id="experience" className="py-24 border-t border-white/10 text-neutral-100 w-full">
+      <div className="w-full px-6 sm:px-10 lg:px-16 xl:px-20">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
+          <div className="max-w-3xl">
+            <span className="text-xs uppercase font-mono tracking-widest text-indigo-300">03 &middot; Track Record &amp; Experience</span>
+            <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight mt-2 text-white">From Control Room Support to Escalated Tier 2</h2>
+            <p className="mt-3 text-neutral-300 text-sm sm:text-base leading-relaxed">
+              Every Tier 2 diagnostic habit was built on the front lines: 24/7 weighbridge telemetry, real-time vehicle dispatch, and control room client support at TonTrac Systems Analytics.
+            </p>
+          </div>
+
+          {/* Role Toggle */}
+          <div className="flex rounded-full bg-white/[0.06] backdrop-blur-md p-1 border border-white/15 self-start md:self-auto">
+            <button
+              onClick={() => setSelectedRole("t1")}
+              className={`px-5 py-2 rounded-full text-xs sm:text-sm font-medium transition-all ${
+                selectedRole === "t1"
+                  ? "bg-white text-black shadow-lg"
+                  : "text-neutral-300 hover:text-white"
+              }`}
+            >
+              Help Desk Technician (Tier 1)
+            </button>
+            <button
+              onClick={() => setSelectedRole("t2")}
+              className={`px-5 py-2 rounded-full text-xs sm:text-sm font-medium transition-all ${
+                selectedRole === "t2"
+                  ? "bg-white text-black shadow-lg"
+                  : "text-neutral-300 hover:text-white"
+              }`}
+            >
+              Tier 2 IT Support (Current)
+            </button>
+          </div>
+        </div>
+
+        {selectedRole === "t1" ? (
+          <div className="mt-10 rounded-2xl bg-white/[0.06] backdrop-blur-xl border border-white/15 p-6 sm:p-10 shadow-2xl">
+            <div className="flex flex-wrap items-center justify-between gap-4 border-b border-white/10 pb-6">
+              <div>
+                <div className="flex items-center gap-3">
+                  <h3 className="text-2xl font-semibold text-white">Help Desk Technician (Tier 1)</h3>
+                  <span className="px-3 py-1 bg-amber-500/20 text-amber-300 border border-amber-500/30 rounded-full text-xs font-mono">
+                    TonTrac Systems Analytics
+                  </span>
+                </div>
+                <p className="text-sm text-neutral-300 mt-1">
+                  24/7 Remote Client Support &middot; Control Room Operations &middot; Fleet Telemetry &amp; Site Connectivity
+                </p>
+              </div>
+              <span className="text-xs font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full">
+                Promoted to Tier 2 after 13 months
+              </span>
+            </div>
+
+            <div className="grid lg:grid-cols-12 gap-8 mt-8">
+              {/* Left Column: Core Mandates */}
+              <div className="lg:col-span-7 space-y-6">
+                <div className="bg-white/[0.04] p-5 sm:p-6 rounded-xl border border-white/10">
+                  <span className="text-xs font-mono text-indigo-300 uppercase tracking-wider block mb-2">Weighbridge Automation &amp; 24/7 Remote Support</span>
+                  <p className="text-sm sm:text-base text-neutral-200 leading-relaxed">
+                    Monitor and operate weighbridge automation systems and software to ensure that client requests are being responded to promptly and effectively. Provide 24/7 remote support to clients, including responding to technical issues and providing guidance on system operation.
+                  </p>
+                </div>
+
+                <div className="space-y-3">
+                  <span className="text-xs font-mono text-indigo-300 uppercase tracking-wider block">Control Room Operations &amp; Team Collaboration</span>
+                  
+                  <div className="bg-white/[0.04] p-4 rounded-xl border border-white/10 flex items-start gap-3">
+                    <span className="text-emerald-400 text-base leading-none mt-1">&#x2713;</span>
+                    <div>
+                      <strong className="text-white text-sm block">Document Client Requests &amp; Issue Resolution</strong>
+                      <p className="text-xs sm:text-sm text-neutral-300 mt-1 leading-relaxed">
+                        Document client requests and issue resolution in the control room system, ensuring that all relevant information is recorded accurately and completely.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white/[0.04] p-4 rounded-xl border border-white/10 flex items-start gap-3">
+                    <span className="text-emerald-400 text-base leading-none mt-1">&#x2713;</span>
+                    <div>
+                      <strong className="text-white text-sm block">Cross-Operator &amp; Supervisor Collaboration</strong>
+                      <p className="text-xs sm:text-sm text-neutral-300 mt-1 leading-relaxed">
+                        Collaborate with other control room operators and the Control Room Supervisor to ensure that all systems and software are functioning correctly and that all client requests are being responded to promptly and effectively.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white/[0.04] p-4 rounded-xl border border-white/10 flex items-start gap-3">
+                    <span className="text-emerald-400 text-base leading-none mt-1">&#x2713;</span>
+                    <div>
+                      <strong className="text-white text-sm block">Safety &amp; Security Protocols</strong>
+                      <p className="text-xs sm:text-sm text-neutral-300 mt-1 leading-relaxed">
+                        Follow safety and security protocols to maintain a safe and secure working environment across remote site connections and control room infrastructure.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right Column: Troubleshooting & Scheduled Operations */}
+              <div className="lg:col-span-5 space-y-6">
+                <div className="bg-white/[0.04] p-6 rounded-xl border border-white/10">
+                  <span className="text-xs font-mono text-indigo-300 uppercase tracking-wider block mb-3">Hands-On Technical Troubleshooting</span>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div className="p-3.5 bg-white/[0.05] rounded-lg border border-white/10">
+                      <strong className="text-white text-xs block font-semibold">Printer Software &amp; Hardware</strong>
+                      <p className="text-xs text-neutral-400 mt-1">Thermal slip units, weighbridge ticket printers, network spooler clears</p>
+                    </div>
+                    <div className="p-3.5 bg-white/[0.05] rounded-lg border border-white/10">
+                      <strong className="text-white text-xs block font-semibold">Computer Software &amp; Hardware</strong>
+                      <p className="text-xs text-neutral-400 mt-1">OS troubleshooting, serial communication ports, component swaps</p>
+                    </div>
+                    <div className="p-3.5 bg-white/[0.05] rounded-lg border border-white/10">
+                      <strong className="text-white text-xs block font-semibold">Database Server</strong>
+                      <p className="text-xs text-neutral-400 mt-1">Connection availability checks, service restarts, transaction queue verification</p>
+                    </div>
+                    <div className="p-3.5 bg-white/[0.05] rounded-lg border border-white/10">
+                      <strong className="text-white text-xs block font-semibold">Software App Installations</strong>
+                      <p className="text-xs text-neutral-400 mt-1">TonTrac proprietary automation suite, remote agents, system utilities</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white/[0.04] p-6 rounded-xl border border-white/10 space-y-4">
+                  <span className="text-xs font-mono text-indigo-300 uppercase tracking-wider block">Daily Scheduled Operations &amp; Connectivity</span>
+                  
+                  <div className="p-3.5 bg-white/[0.05] rounded-lg border border-white/10">
+                    <div className="flex items-center justify-between">
+                      <strong className="text-white text-xs font-semibold">TonTrac Fleet Vehicles Monitoring</strong>
+                      <span className="text-xs font-mono text-amber-300">Daily at 06:00</span>
+                    </div>
+                    <p className="text-xs text-neutral-300 mt-1.5 leading-relaxed">
+                      Monitoring &amp; reporting of TonTrac fleet vehicles locations daily at 06:00.
+                    </p>
+                  </div>
+
+                  <div className="p-3.5 bg-white/[0.05] rounded-lg border border-white/10">
+                    <strong className="text-white text-xs font-semibold block">Site Data &amp; Bundle Replenishment</strong>
+                    <p className="text-xs text-neutral-300 mt-1.5 leading-relaxed">
+                      Monitoring &amp; reporting of site data &amp; facilitating replenishment of said data bundles on a per site basis to prevent remote site drop-offs.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ) : (
+          <div className="mt-10 rounded-2xl bg-white/[0.06] backdrop-blur-xl border border-white/15 p-6 sm:p-10 shadow-2xl">
+            <div className="flex flex-wrap items-center justify-between gap-4 border-b border-white/10 pb-6">
+              <div>
+                <div className="flex items-center gap-3">
+                  <h3 className="text-2xl font-semibold text-white">Tier 2 IT Support Technician</h3>
+                  <span className="px-3 py-1 bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 rounded-full text-xs font-mono">
+                    TonTrac Systems Analytics (Current)
+                  </span>
+                </div>
+                <p className="text-sm text-neutral-300 mt-1">
+                  Escalated Incidents &middot; Root Cause Analysis &middot; PowerShell Automation &middot; Action1 Patch Management
+                </p>
+              </div>
+              <span className="text-xs font-mono text-neutral-400">50+ Distributed Sites &middot; 75+ Daily Tickets</span>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6 mt-8">
+              <div className="p-6 rounded-xl bg-white/[0.04] border border-white/10">
+                <span className="text-xs font-mono text-indigo-300 uppercase block mb-1">Tier 2 Escalations</span>
+                <h4 className="text-lg font-semibold text-white">Root Cause Diagnostics</h4>
+                <p className="text-xs sm:text-sm text-neutral-300 mt-2 leading-relaxed">
+                  Deep isolation of SQL deadlocks and blocking SPIDs, Entra ID sync faults, and branch application freezes with documented permanent prevention.
+                </p>
+              </div>
+
+              <div className="p-6 rounded-xl bg-white/[0.04] border border-white/10">
+                <span className="text-xs font-mono text-indigo-300 uppercase block mb-1">Automation &amp; Patching</span>
+                <h4 className="text-lg font-semibold text-white">PowerShell &amp; Action1</h4>
+                <p className="text-xs sm:text-sm text-neutral-300 mt-2 leading-relaxed">
+                  Automated user provisioning scripts saving 5+ hours weekly. Zero-daytime-disruption patch deployments across servers and remote workstations.
+                </p>
+              </div>
+
+              <div className="p-6 rounded-xl bg-white/[0.04] border border-white/10">
+                <span className="text-xs font-mono text-indigo-300 uppercase block mb-1">Telemetry &amp; Audit</span>
+                <h4 className="text-lg font-semibold text-white">Zabbix &amp; Daily Attestation</h4>
+                <p className="text-xs sm:text-sm text-neutral-300 mt-2 leading-relaxed">
+                  Reduced night-shift alert fatigue by 88% through threshold tuning. 100% daily verified sign-off for all 52 site SQL database backups.
+                </p>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+    </section>
+  );
+}
+
 function ShiftSection() {
   const shifts = [
     {
@@ -466,7 +666,7 @@ function ShiftSection() {
   return (
     <section id="shift" className="py-24 border-t border-white/10 text-neutral-100 w-full">
       <div className="w-full px-6 sm:px-10 lg:px-16 xl:px-20">
-        <span className="text-xs uppercase font-mono tracking-widest text-indigo-300">03 &middot; The Rhythm</span>
+        <span className="text-xs uppercase font-mono tracking-widest text-indigo-300">04 &middot; The Daily Rhythm</span>
         <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight mt-2 text-white">What a normal day looks like from my chair</h2>
 
         <div className="grid md:grid-cols-4 gap-6 mt-10">
@@ -489,7 +689,7 @@ function ToolboxSection() {
   return (
     <section id="toolbox" className="py-24 border-t border-white/10 text-neutral-100 w-full">
       <div className="w-full px-6 sm:px-10 lg:px-16 xl:px-20">
-        <span className="text-xs uppercase font-mono tracking-widest text-indigo-300">04 &middot; Operational Stack</span>
+        <span className="text-xs uppercase font-mono tracking-widest text-indigo-300">05 &middot; Operational Stack</span>
         <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight mt-2 text-white">Tools used to keep 50+ sites running</h2>
 
         <div className="grid md:grid-cols-3 gap-6 mt-10">
