@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+
+<head>`n    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#121212">
+    <meta name="color-scheme" content="dark">
+    <title>Emmanuel Kgaphola | Tier 2 IT Support Technician &amp; Escalation Specialist</title>
+    <meta name="description"
+        content="Tier 2 IT Support Technician &amp; Help Desk Specialist in Johannesburg. Supporting 50+ remote sites, resolving 75+ daily tickets, Active Directory, Action1 patching, PowerShell automation, and 100% Odoo ticket hygiene.">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%231A1918' stroke='%232A2826' stroke-width='4'/><text x='50' y='66' font-size='44' font-weight='600' text-anchor='middle' fill='%23E07A5F' font-family='sans-serif'>EK</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&family=Geist:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        zinc: {
+                            950: '#121212',
+                            900: '#1A1918',
+                            800: '#2A2826',
+                            400: '#A39E93',
+                            50: '#F5F5F0'
+                        },
+                        terracotta: {
+                            500: '#E07A5F',
+                            600: '#C86449'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Geist', 'system-ui', '-apple-system', 'sans-serif'],
+                        mono: ['Geist Mono', 'ui-monospace', 'SFMono-Regular', 'monospace']
+                    },
+                    width: {
+                        'hero-left': '65%',
+                        'hero-right': '38%'
+                    },
+                    boxShadow: {
+                        'profile': '0 20px 40px rgba(0, 0, 0, 0.15)',
+                        'card': '0 20px 40px rgba(0, 0, 0, 0.05)'
+                    },
+                    scale: {
+                        '97': '0.97',
+                        '98': '0.98'
+                    },
+                    transitionTimingFunction: {
+                        'spring': 'cubic-bezier(0.22, 1, 0.36, 1)'
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+
+<body id="top" class="relative bg-zinc-950 text-zinc-50 font-sans text-base leading-relaxed antialiased selection:bg-terracotta-500/20 selection:text-zinc-50 overflow-x-hidden touch-manipulation">
+    <!-- Subtle Human Grain Texture Overlay -->
+    <svg class="pointer-events-none fixed inset-0 z-50 h-full w-full opacity-5" aria-hidden="true">
+        <filter id="warm-grain">
+            <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch" />
+        </filter>
+        <rect width="100%" height="100%" filter="url(#warm-grain)" />
+    </svg>
+
+    <!-- Skip Link for Keyboard Accessibility -->
+    <a href="#main-content"
+        class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:rounded-lg focus:bg-terracotta-500 focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-zinc-950 focus:outline-none focus:ring-2 focus:ring-zinc-50">
+        Skip to main content
+    </a>
+
+    <!-- Translucent Material Header (Apple Design: backdrop-filter layer with content scrolling underneath) -->
+    <header class="sticky top-0 z-40 border-b border-zinc-800/80 bg-zinc-950/80 backdrop-blur-xl">
+        <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
+            <a href="#top"
+                class="group inline-flex items-center gap-3 rounded-lg py-1 pr-2 transition-transform duration-200 ease-spring active:scale-97 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500 motion-reduce:transition-none motion-reduce:transform-none">
+                <span
+                    class="inline-flex h-8 w-8 items-center justify-center rounded-lg border border-zinc-800 bg-zinc-900 text-xs font-semibold text-terracotta-500 transition-colors duration-200 group-hover:border-terracotta-500/50"
+                    translate="no">EK</span>
+                <span class="font-semibold tracking-tight text-zinc-50">Emmanuel Kgaphola</span>
+                <span
+                    class="hidden rounded-md border border-zinc-800 bg-zinc-900 px-2 py-0.5 text-xs font-medium text-zinc-400 sm:inline-block">Tier&nbsp;2 IT Ops</span>
+            </a>
+
+            <nav aria-label="Primary Navigation" class="hidden md:block">
+                <ul class="flex items-center gap-1 rounded-xl border border-zinc-800/80 bg-zinc-900/70 p-1">
+                    <li>
+                        <a href="#impact"
+                            class="nav-link inline-block rounded-lg px-3 py-1.5 text-sm font-medium text-zinc-400 transition-colors duration-200 hover:bg-zinc-800/60 hover:text-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500">
+                            Impact
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#shift"
+                            class="nav-link inline-block rounded-lg px-3 py-1.5 text-sm font-medium text-zinc-400 transition-colors duration-200 hover:bg-zinc-800/60 hover:text-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500">
+                            Daily Rhythm
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#evidence"
+                            class="nav-link inline-block rounded-lg px-3 py-1.5 text-sm font-medium text-zinc-400 transition-colors duration-200 hover:bg-zinc-800/60 hover:text-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500">
+                            Evidence
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#toolbox"
+                            class="nav-link inline-block rounded-lg px-3 py-1.5 text-sm font-medium text-zinc-400 transition-colors duration-200 hover:bg-zinc-800/60 hover:text-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500">
+                            Toolbox
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#principles"
+                            class="nav-link inline-block rounded-lg px-3 py-1.5 text-sm font-medium text-zinc-400 transition-colors duration-200 hover:bg-zinc-800/60 hover:text-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500">
+                            Principles
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#story"
+                            class="nav-link inline-block rounded-lg px-3 py-1.5 text-sm font-medium text-zinc-400 transition-colors duration-200 hover:bg-zinc-800/60 hover:text-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500">
+                            Story
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="flex items-center gap-2">
+                <a href="#contact"
+                    class="inline-flex items-center gap-2 rounded-lg bg-zinc-50 px-3.5 py-2 text-sm font-medium text-zinc-950 transition-transform duration-200 ease-spring hover:opacity-90 active:scale-97 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950 motion-reduce:transition-none motion-reduce:transform-none">
+                    <span>Get in Touch</span>
+                </a>
+                <button type="button" id="mobileMenuBtn" aria-expanded="false" aria-controls="mobileMenu"
+                    aria-label="Toggle Navigation Menu"
+                    class="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-zinc-800 bg-zinc-900 text-zinc-400 transition-transform duration-200 ease-spring hover:border-zinc-400/40 hover:text-zinc-50 active:scale-97 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500 md:hidden motion-reduce:transition-none motion-reduce:transform-none">
+                    <svg id="menuIconOpen" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        stroke-width="1.75" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <svg id="menuIconClose" class="hidden h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobileMenu" class="hidden border-t border-zinc-800 bg-zinc-900/95 px-4 py-4 backdrop-blur-xl md:hidden">
+            <ul class="flex flex-col gap-1">
+                <li><a href="#impact" class="mobile-nav-link block rounded-lg px-3 py-2 text-sm font-medium text-zinc-400 transition-colors duration-200 hover:bg-zinc-800 hover:text-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500">Impact &amp; Fit</a></li>
+                <li><a href="#shift" class="mobile-nav-link block rounded-lg px-3 py-2 text-sm font-medium text-zinc-400 transition-colors duration-200 hover:bg-zinc-800 hover:text-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500">Daily Rhythm</a></li>
+                <li><a href="#evidence" class="mobile-nav-link block rounded-lg px-3 py-2 text-sm font-medium text-zinc-400 transition-colors duration-200 hover:bg-zinc-800 hover:text-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500">Evidence &amp; Artifacts</a></li>
+                <li><a href="#toolbox" class="mobile-nav-link block rounded-lg px-3 py-2 text-sm font-medium text-zinc-400 transition-colors duration-200 hover:bg-zinc-800 hover:text-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500">Operational Toolbox</a></li>
+                <li><a href="#principles" class="mobile-nav-link block rounded-lg px-3 py-2 text-sm font-medium text-zinc-400 transition-colors duration-200 hover:bg-zinc-800 hover:text-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500">Working Principles</a></li>
+                <li><a href="#story" class="mobile-nav-link block rounded-lg px-3 py-2 text-sm font-medium text-zinc-400 transition-colors duration-200 hover:bg-zinc-800 hover:text-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500">Background &amp; Story</a></li>
+                <li><a href="#contact" class="mobile-nav-link block rounded-lg px-3 py-2 text-sm font-medium text-terracotta-500 transition-colors duration-200 hover:bg-zinc-800 hover:text-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500">Contact Directly</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- REDESIGNED HUMAN HERO: 65% Left Column + Overlapping Profile Card (-20px margin) + Asymmetric 99.9% Anchor Stat -->
+        <section class="mx-auto max-w-6xl px-4 py-24 sm:px-6 lg:px-8">
+            <div class="flex flex-col items-start lg:flex-row">
+                <!-- Left Column: 65% Width Editorial Narrative -->
+                <div class="relative z-10 w-full rounded-2xl border border-zinc-800/90 bg-zinc-900/60 p-6 sm:p-10 lg:w-hero-left lg:pr-14">
+                    <!-- ONLY element using Geist Mono per typography rule -->
+                    <div class="mb-6 inline-flex items-center gap-2.5 rounded-full border border-zinc-800 bg-zinc-950/90 px-3.5 py-1.5">
+                        <span class="h-2 w-2 rounded-full bg-terracotta-500" aria-hidden="true"></span>
+                        <span class="font-mono text-xs text-zinc-400">Johannesburg, ZA &middot; Tier&nbsp;2 IT Support</span>
+                    </div>
+
+                    <h1 class="font-sans text-3xl font-semibold tracking-tight text-zinc-50 text-balance sm:text-5xl sm:leading-tight">
+                        When critical IT systems go down, I don&rsquo;t just restart services &mdash; I solve the root cause.
+                    </h1>
+
+                    <p class="mt-6 max-w-2xl text-base leading-relaxed text-zinc-400">
+                        Hi, I&rsquo;m Emmanuel. Resolving 75+&nbsp;daily tickets across <strong class="font-medium text-zinc-50">50+&nbsp;remote and enterprise sites</strong> taught me that downtime is never bad luck &mdash; it is unaddressed root causes. Working as a Tier&nbsp;2 IT Support Technician at TonTrac Systems Analytics, I handle escalated incidents from First Line Support, maintain 100% audit-ready ticket hygiene in <span translate="no">Odoo</span>/ITSM, manage system patching with <span translate="no">Action1</span>, and automate repetitive workflows with <span translate="no">PowerShell</span>.
+                    </p>
+
+                    <!-- Primary Actions: Tactile Spring Email Button + Quiet Secondary Actions -->
+                    <div class="mt-8 flex flex-wrap items-center gap-3">
+                        <a href="mailto:emmanuelkgaphola@outlook.com" id="heroEmailBtn"
+                            class="inline-flex items-center gap-2.5 rounded-xl bg-terracotta-500 px-5 py-3.5 text-sm font-semibold text-zinc-950 shadow-profile will-change-transform transition-colors duration-200 hover:bg-terracotta-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950">
+                            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <span>Email Emmanuel</span>
+                        </a>
+
+                        <button type="button" data-copy-email="emmanuelkgaphola@outlook.com"
+                            class="copy-email-btn inline-flex items-center gap-2 rounded-xl border border-zinc-800 bg-zinc-950 px-4 py-3.5 text-sm font-medium text-zinc-50 transition-transform duration-200 ease-spring hover:border-zinc-400/40 active:scale-97 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950 motion-reduce:transition-none motion-reduce:transform-none">
+                            <svg class="h-4 w-4 text-zinc-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                            </svg>
+                            <span class="copy-label">Copy Email Address</span>
+                        </button>
+
+                        <a href="CV/Emmanuel_Kgaphola_CV.docx" download
+                            class="inline-flex items-center gap-2 rounded-xl border border-zinc-800 bg-zinc-950/60 px-4 py-3.5 text-sm font-medium text-zinc-400 transition-transform duration-200 ease-spring hover:border-zinc-400/40 hover:text-zinc-50 active:scale-97 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950 motion-reduce:transition-none motion-reduce:transform-none">
+                            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            <span>Download CV (.docx)</span>
+                        </a>
+                    </div>
+
+                    <!-- Direct Human Links -->
+                    <div class="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 border-t border-zinc-800/80 pt-6 text-xs text-zinc-400">
+                        <a href="https://linkedin.com/in/emmanuel-kgaphola" target="_blank" rel="noopener"
+                            class="rounded font-medium transition-colors duration-200 hover:text-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500">
+                            linkedin.com/in/emmanuel-kgaphola &#8599;
+                        </a>
+                        <a href="https://github.com/Kgaphola45" target="_blank" rel="noopener"
+                            class="rounded font-medium transition-colors duration-200 hover:text-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500"
+                            translate="no">
+                            github.com/Kgaphola45 &#8599;
+                        </a>
+                        <span>Fluent in English, Sepedi, Zulu &amp; Sotho</span>
+                    </div>
+                </div>
+
+                <!-- Right Column: Overlapping Profile & Asymmetric Stats Card (-20px margin via -mt-5 lg:-ml-5 and soft shadow 0 20px 40px rgba(0,0,0,0.15)) -->
+                <aside class="relative z-20 -mt-5 w-full rounded-xl border border-zinc-800 bg-zinc-900 p-6 shadow-profile sm:p-8 lg:-ml-5 lg:mt-10 lg:w-hero-right">
+                    <div class="flex items-center gap-4">
+                        <img src="Images/my_Image.jpg" alt="Portrait of Emmanuel Kgaphola, Tier 2 IT Support Technician"
+                            width="80" height="80" fetchpriority="high"
+                            class="h-20 w-20 rounded-xl border border-zinc-800 object-cover">
+                        <div>
+                            <h2 class="text-lg font-semibold tracking-tight text-zinc-50">Emmanuel Kgaphola</h2>
+                            <p class="text-sm text-zinc-400">IT Support Technician (Tier&nbsp;2)</p>
+                            <p class="mt-0.5 text-xs font-medium text-terracotta-500">TonTrac Systems Analytics</p>
+                        </div>
+                    </div>
+
+                    <!-- Asymmetric Stats: Big 48px (text-5xl) 99.9% Uptime Anchor + Small Quiet Supporting Groupings -->
+                    <div class="mt-7 border-t border-zinc-800 pt-6">
+                        <div class="flex items-baseline justify-between gap-4">
+                            <div>
+                                <span class="block text-5xl font-semibold tracking-tight text-zinc-50 tabular-nums">99.9%</span>
+                                <span class="mt-1.5 block text-sm font-medium text-zinc-50">System uptime maintained</span>
+                                <span class="mt-0.5 block text-xs text-zinc-400">Across 50+&nbsp;remote &amp; enterprise sites</span>
+                            </div>
+                            <span class="inline-flex items-center gap-1.5 rounded-full border border-zinc-800 bg-zinc-950 px-2.5 py-1 text-xs font-medium text-terracotta-500">
+                                <span class="h-1.5 w-1.5 rounded-full bg-terracotta-500" aria-hidden="true"></span>
+                                Verified
+                            </span>
+                        </div>
+
+                        <!-- Quiet Asymmetric Supporting Ledger (not 6 identical cards) -->
+                        <dl class="mt-6 grid grid-cols-12 gap-y-4 border-t border-zinc-800/80 pt-5 text-xs">
+                            <div class="col-span-7 pr-3">
+                                <dt class="text-zinc-400">Daily queue &amp; first-contact fix</dt>
+                                <dd class="mt-0.5 text-sm font-semibold text-zinc-50 tabular-nums">75+&nbsp;tickets/day <span class="font-normal text-zinc-400">(92% T1 fix)</span></dd>
+                            </div>
+                            <div class="col-span-5 border-l border-zinc-800 pl-4">
+                                <dt class="text-zinc-400">Odoo audit hygiene</dt>
+                                <dd class="mt-0.5 text-sm font-semibold text-zinc-50 tabular-nums">100% signed</dd>
+                            </div>
+                            <div class="col-span-5 pr-3 pt-1">
+                                <dt class="text-zinc-400">T1 &rarr; T2 promotion</dt>
+                                <dd class="mt-0.5 text-sm font-semibold text-zinc-50 tabular-nums">13&nbsp;months</dd>
+                            </div>
+                            <div class="col-span-7 border-l border-zinc-800 pl-4 pt-1">
+                                <dt class="text-zinc-400">Zabbix night alert tuning</dt>
+                                <dd class="mt-0.5 text-sm font-semibold text-terracotta-500 tabular-nums">-88% false alarms</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- SECTION 1: OUTCOME-DRIVEN FIT & BUSINESS IMPACT -->
+        <section id="impact" class="scroll-mt-20 border-t border-zinc-800/80 py-24">
+            <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 gap-12 lg:grid-cols-12">
+                    <div class="lg:col-span-4">
+                        <h2 class="text-2xl font-semibold tracking-tight text-zinc-50 text-balance">
+                            Built for teams where downtime means blocked operations
+                        </h2>
+                        <p class="mt-4 text-base leading-relaxed text-zinc-400">
+                            If you run a high-volume service desk, distributed branch infrastructure, or 24/7 operations where unverified fixes create tomorrow&rsquo;s outage, here is how I help your team sleep through the night.
+                        </p>
+                        <div class="mt-6 rounded-xl border border-zinc-800 bg-zinc-900 p-6 shadow-card">
+                            <p class="text-xs font-semibold text-terracotta-500">Production Proof</p>
+                            <p class="mt-2 text-sm leading-relaxed text-zinc-400">
+                                Reduced false-positive night alerts by <strong class="font-medium text-zinc-50">88%</strong> across 50+&nbsp;sites by auditing and re-tuning <span translate="no">Zabbix</span> trigger thresholds alongside Senior Engineering.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-8">
+                        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                            <article class="rounded-xl border border-zinc-800 bg-zinc-900 p-6 shadow-card transition-colors duration-200 hover:border-zinc-400/30">
+                                <h3 class="text-base font-semibold tracking-tight text-zinc-50">Audit-ready shifts &amp; ticket hygiene</h3>
+                                <p class="mt-2 text-sm leading-relaxed text-zinc-400">
+                                    SQL backups verified daily, <span translate="no">Odoo</span>/ITSM tickets 100% documented with diagnostic logs, and clean handovers. Your next compliance audit is already covered.
+                                </p>
+                            </article>
+
+                            <article class="rounded-xl border border-zinc-800 bg-zinc-900 p-6 shadow-card transition-colors duration-200 hover:border-zinc-400/30">
+                                <h3 class="text-base font-semibold tracking-tight text-zinc-50">Root cause, not just &ldquo;ticket closed&rdquo;</h3>
+                                <p class="mt-2 text-sm leading-relaxed text-zinc-400">
+                                    I don&rsquo;t send &ldquo;resolved&rdquo; and vanish. You get event log evidence, SQL lock analysis, verified prevention steps, and knowledge base notes so Tier&nbsp;1 levels up.
+                                </p>
+                            </article>
+
+                            <article class="rounded-xl border border-zinc-800 bg-zinc-900 p-6 shadow-card transition-colors duration-200 hover:border-zinc-400/30">
+                                <h3 class="text-base font-semibold tracking-tight text-zinc-50">Proactive monitoring before calls</h3>
+                                <p class="mt-2 text-sm leading-relaxed text-zinc-400">
+                                    <span translate="no">Zabbix</span> and <span translate="no">Meraki</span> tuned to catch memory leaks, storage spikes, and WAN packet drops before branch operators even notice a slowdown.
+                                </p>
+                            </article>
+
+                            <article class="rounded-xl border border-zinc-800 bg-zinc-900 p-6 shadow-card transition-colors duration-200 hover:border-zinc-400/30">
+                                <h3 class="text-base font-semibold tracking-tight text-zinc-50">PowerShell automation that saves hours</h3>
+                                <p class="mt-2 text-sm leading-relaxed text-zinc-400">
+                                    Automated Active Directory / <span translate="no">Entra ID</span> onboarding, RBAC security group mapping, and daily operational Excel reports saving ~5&nbsp;hours every week.
+                                </p>
+                            </article>
+                        </div>
+
+                        <!-- Multilingual & Human De-escalation Card -->
+                        <div class="mt-4 flex flex-col justify-between gap-4 rounded-xl border border-zinc-800 bg-zinc-900 p-6 shadow-card sm:flex-row sm:items-center">
+                            <div>
+                                <h3 class="text-base font-semibold tracking-tight text-zinc-50">Calm communication under pressure</h3>
+                                <p class="mt-1 text-sm leading-relaxed text-zinc-400">
+                                    Fluent support in <strong class="font-medium text-zinc-50">English, Sepedi, Zulu, and Sotho</strong>. I de-escalate stressed branch managers, dispatchers, and executives &mdash; not just technical peers.
+                                </p>
+                            </div>
+                            <span class="shrink-0 self-start rounded-lg border border-zinc-800 bg-zinc-950 px-3 py-1.5 text-xs font-medium text-zinc-400 sm:self-center">
+                                Zero untracked fixes
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: THE SHIFT RHYTHM (CHRONOLOGICAL SEQUENCE) -->
+        <section id="shift" class="scroll-mt-20 border-t border-zinc-800/80 py-24">
+            <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 gap-12 lg:grid-cols-12">
+                    <div class="lg:col-span-4">
+                        <h2 class="text-2xl font-semibold tracking-tight text-zinc-50 text-balance">
+                            What a normal shift looks like from my chair
+                        </h2>
+                        <p class="mt-4 text-base leading-relaxed text-zinc-400">
+                            The honest, ticket-driven daily rhythm of Tier&nbsp;2 IT support across distributed enterprise operations at TonTrac Systems Analytics.
+                        </p>
+                        <div class="mt-6 rounded-xl border border-zinc-800 bg-zinc-900 p-6 text-xs leading-relaxed text-zinc-400 shadow-card">
+                            <p class="font-semibold text-zinc-50">Role Record</p>
+                            <p class="mt-2">IT Support Technician (Tier&nbsp;2) &middot; Mar&nbsp;2026 &ndash; Present</p>
+                            <p class="mt-1">Help Desk Specialist (Tier&nbsp;1) &middot; Feb&nbsp;2025 &ndash; Mar&nbsp;2026</p>
+                            <p class="mt-2 font-medium text-terracotta-500">Reports to IT Administrator &middot; Every change traceable</p>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-8">
+                        <ol class="relative space-y-6 border-l border-zinc-800 pl-6">
+                            <li class="relative rounded-xl border border-zinc-800 bg-zinc-900 p-6 shadow-card">
+                                <span class="absolute -left-8 top-7 flex h-4 w-4 items-center justify-center rounded-full border-2 border-terracotta-500 bg-zinc-950" aria-hidden="true"></span>
+                                <div class="flex flex-wrap items-center justify-between gap-2">
+                                    <span class="text-xs font-semibold text-terracotta-500 tabular-nums">07:00 &middot; Critical Controls &amp; SQL Backups</span>
+                                    <span class="rounded-md border border-zinc-800 bg-zinc-950 px-2.5 py-0.5 text-xs text-zinc-400">Pre-shift Audit</span>
+                                </div>
+                                <h3 class="mt-2 text-lg font-semibold tracking-tight text-zinc-50">Audit checks first before touching a single switch</h3>
+                                <p class="mt-2 text-sm leading-relaxed text-zinc-400">
+                                    Verify database backup completion across all 50+&nbsp;remote sites; any failure is immediately escalated to IT Administration &amp; DevOps with log evidence. Review WAN/LAN health and triage incoming queue so operational blockers get assigned right away.
+                                </p>
+                            </li>
+
+                            <li class="relative rounded-xl border border-zinc-800 bg-zinc-900 p-6 shadow-card">
+                                <span class="absolute -left-8 top-7 flex h-4 w-4 items-center justify-center rounded-full border-2 border-zinc-800 bg-zinc-950" aria-hidden="true"></span>
+                                <div class="flex flex-wrap items-center justify-between gap-2">
+                                    <span class="text-xs font-semibold text-terracotta-500 tabular-nums">09:00 &middot; Escalations &amp; Tier 2 Diagnostics</span>
+                                    <span class="rounded-md border border-zinc-800 bg-zinc-950 px-2.5 py-0.5 text-xs text-zinc-400">Deep RCA</span>
+                                </div>
+                                <h3 class="mt-2 text-lg font-semibold tracking-tight text-zinc-50">Where &ldquo;turn it off and on again&rdquo; stops working</h3>
+                                <p class="mt-2 text-sm leading-relaxed text-zinc-400">
+                                    Take escalated incidents from First Line Support: SQL database deadlocks, silent <span translate="no">Entra ID</span> / Azure AD sync faults, and branch app freezes. Run <span translate="no">Meraki</span> throughput checks, VoIP/PABX call quality diagnostics, and Windows Event Viewer traces.
+                                </p>
+                            </li>
+
+                            <li class="relative rounded-xl border border-zinc-800 bg-zinc-900 p-6 shadow-card">
+                                <span class="absolute -left-8 top-7 flex h-4 w-4 items-center justify-center rounded-full border-2 border-zinc-800 bg-zinc-950" aria-hidden="true"></span>
+                                <div class="flex flex-wrap items-center justify-between gap-2">
+                                    <span class="text-xs font-semibold text-terracotta-500 tabular-nums">13:00 &middot; Patching, Hardware &amp; Automation</span>
+                                    <span class="rounded-md border border-zinc-800 bg-zinc-950 px-2.5 py-0.5 text-xs text-zinc-400">Change Control</span>
+                                </div>
+                                <h3 class="mt-2 text-lg font-semibold tracking-tight text-zinc-50">Controlled production changes and killing repetitive work</h3>
+                                <p class="mt-2 text-sm leading-relaxed text-zinc-400">
+                                    Deploy endpoint and server patches via <span translate="no">Action1</span> with zero surprise reboots during core hours. Check UPS power and NVR storage limits, provision new workstations, update asset registers, and run <span translate="no">PowerShell</span> scripts for user provisioning.
+                                </p>
+                            </li>
+
+                            <li class="relative rounded-xl border border-zinc-800 bg-zinc-900 p-6 shadow-card">
+                                <span class="absolute -left-8 top-7 flex h-4 w-4 items-center justify-center rounded-full border-2 border-zinc-800 bg-zinc-950" aria-hidden="true"></span>
+                                <div class="flex flex-wrap items-center justify-between gap-2">
+                                    <span class="text-xs font-semibold text-terracotta-500 tabular-nums">16:30 &middot; Daily Closure &amp; Attestation</span>
+                                    <span class="rounded-md border border-zinc-800 bg-zinc-950 px-2.5 py-0.5 text-xs text-zinc-400">100% Signed Off</span>
+                                </div>
+                                <h3 class="mt-2 text-lg font-semibold tracking-tight text-zinc-50">Daily Operational Report: 100% audit-ready in Odoo</h3>
+                                <p class="mt-2 text-sm leading-relaxed text-zinc-400">
+                                    The shift isn&rsquo;t done until ticket hygiene in <span translate="no">Odoo</span> is signed off. Compile and distribute the Daily Operational Report covering SQL backup statuses, network incidents, security alerts, and open high-priority risks. Zero loose ends left for the next shift.
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: INTERACTIVE PROOF & EVIDENCE WORKBENCH -->
+        <section id="evidence" class="scroll-mt-20 border-t border-zinc-800/80 py-24">
+            <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+                <div class="max-w-2xl">
+                    <h2 class="text-2xl font-semibold tracking-tight text-zinc-50 text-balance">
+                        Tier&nbsp;2 lives on evidence, not claims
+                    </h2>
+                    <p class="mt-3 text-base leading-relaxed text-zinc-400">
+                        Inspect redacted production artifacts from my daily workflow: a real root-cause ticket, user onboarding automation, <span translate="no">Zabbix</span> trigger tuning, and my end-of-day operational sign-off.
+                    </p>
+                </div>
+
+                <!-- Spring-Animated Segmented Tab Control -->
+                <div class="mt-8">
+                    <div role="tablist" aria-label="Operational Evidence Artifacts" id="proofTabList"
+                        class="relative inline-flex flex-wrap gap-1 rounded-xl border border-zinc-800 bg-zinc-900 p-1.5">
+                        <!-- Spring indicator driven by Apple critically-damped physics in script.js -->
+                        <div id="proofTabIndicator"
+                            class="pointer-events-none absolute left-0 top-1.5 hidden h-9 rounded-lg border border-zinc-800 bg-zinc-950 shadow-sm sm:block"
+                            aria-hidden="true"></div>
+
+                        <button type="button" role="tab" id="tab-btn-odoo" aria-selected="true" aria-controls="panel-odoo"
+                            data-tab="odoo"
+                            class="proof-tab relative z-10 inline-flex items-center gap-2 rounded-lg px-3.5 py-2 text-xs font-medium text-zinc-50 transition-colors duration-200 active:scale-97 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500 sm:text-sm motion-reduce:transition-none motion-reduce:transform-none">
+                            <span class="text-xs font-semibold text-terracotta-500 tabular-nums">01</span>
+                            <span>Odoo RCA Ticket</span>
+                        </button>
+
+                        <button type="button" role="tab" id="tab-btn-powershell" aria-selected="false" aria-controls="panel-powershell"
+                            data-tab="powershell" tabindex="-1"
+                            class="proof-tab relative z-10 inline-flex items-center gap-2 rounded-lg px-3.5 py-2 text-xs font-medium text-zinc-400 transition-colors duration-200 hover:text-zinc-50 active:scale-97 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500 sm:text-sm motion-reduce:transition-none motion-reduce:transform-none">
+                            <span class="text-xs font-semibold text-zinc-400 tabular-nums">02</span>
+                            <span>PowerShell Script</span>
+                        </button>
+
+                        <button type="button" role="tab" id="tab-btn-zabbix" aria-selected="false" aria-controls="panel-zabbix"
+                            data-tab="zabbix" tabindex="-1"
+                            class="proof-tab relative z-10 inline-flex items-center gap-2 rounded-lg px-3.5 py-2 text-xs font-medium text-zinc-400 transition-colors duration-200 hover:text-zinc-50 active:scale-97 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500 sm:text-sm motion-reduce:transition-none motion-reduce:transform-none">
+                            <span class="text-xs font-semibold text-zinc-400 tabular-nums">03</span>
+                            <span>Zabbix Alert Tuning</span>
+                        </button>
+
+                        <button type="button" role="tab" id="tab-btn-report" aria-selected="false" aria-controls="panel-report"
+                            data-tab="report" tabindex="-1"
+                            class="proof-tab relative z-10 inline-flex items-center gap-2 rounded-lg px-3.5 py-2 text-xs font-medium text-zinc-400 transition-colors duration-200 hover:text-zinc-50 active:scale-97 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500 sm:text-sm motion-reduce:transition-none motion-reduce:transform-none">
+                            <span class="text-xs font-semibold text-zinc-400 tabular-nums">04</span>
+                            <span>Daily Ops Report</span>
+                        </button>
+                    </div>
+
+                    <!-- Panel 1: Odoo RCA Ticket -->
+                    <div role="tabpanel" id="panel-odoo" aria-labelledby="tab-btn-odoo" data-panel="odoo"
+                        class="proof-panel mt-6 rounded-xl border border-zinc-800 bg-zinc-900 p-6 shadow-profile">
+                        <div class="flex flex-wrap items-center justify-between gap-4 border-b border-zinc-800 pb-4">
+                            <div class="flex items-center gap-2.5">
+                                <span class="h-2.5 w-2.5 rounded-full bg-terracotta-500" aria-hidden="true"></span>
+                                <span class="text-xs font-medium text-zinc-400" translate="no">odoo-itsm.tontrac.local / incident / INC-8492-RCA</span>
+                            </div>
+                            <span class="rounded-md border border-zinc-800 bg-zinc-950 px-2.5 py-1 text-xs font-medium text-zinc-50">
+                                Closed &middot; Verified RCA
+                            </span>
+                        </div>
+
+                        <dl class="mt-5 grid grid-cols-1 gap-4 rounded-xl border border-zinc-800/80 bg-zinc-950 p-4 sm:grid-cols-2 lg:grid-cols-4">
+                            <div>
+                                <dt class="text-xs text-zinc-400">Ticket ID</dt>
+                                <dd class="mt-1 text-sm font-semibold text-zinc-50 tabular-nums" translate="no">INC-8492</dd>
+                            </div>
+                            <div>
+                                <dt class="text-xs text-zinc-400">Severity</dt>
+                                <dd class="mt-1 text-sm font-semibold text-terracotta-500">Sev&nbsp;2 &middot; Escalated</dd>
+                            </div>
+                            <div>
+                                <dt class="text-xs text-zinc-400">Affected Node</dt>
+                                <dd class="mt-1 text-sm font-medium text-zinc-50">Branch #04 &middot; Core App &amp; SQL DB</dd>
+                            </div>
+                            <div>
+                                <dt class="text-xs text-zinc-400">Owner</dt>
+                                <dd class="mt-1 text-sm font-medium text-zinc-50">Emmanuel Kgaphola (Tier&nbsp;2)</dd>
+                            </div>
+                        </dl>
+
+                        <div class="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-2">
+                            <div class="space-y-4">
+                                <div>
+                                    <h3 class="text-sm font-semibold text-zinc-50">1. Escalation Summary</h3>
+                                    <p class="mt-1 text-sm leading-relaxed text-zinc-400">
+                                        First Line Support escalated after branch client application froze on database record submission at 08:42 during peak operations. Standard workstation reboot did not clear the hang.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h3 class="text-sm font-semibold text-zinc-50">2. Root Cause Analysis (RCA)</h3>
+                                    <p class="mt-1 text-sm leading-relaxed text-zinc-400">
+                                        An unindexed background reporting query held an exclusive table lock on <code class="rounded bg-zinc-950 px-1.5 py-0.5 font-mono text-xs text-zinc-50" translate="no">dbo.tbl_TransactionQueue</code>, starving active production writes from branch endpoints.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="space-y-4">
+                                <div>
+                                    <h3 class="text-sm font-semibold text-zinc-50">3. Diagnostic Log Evidence</h3>
+                                    <pre class="mt-2 overflow-x-auto rounded-lg border border-zinc-800 bg-zinc-950 p-3.5 font-mono text-xs leading-relaxed text-zinc-400" translate="no">[08:41:58.204] [ERROR] SqlException (0x80131904):
+Lock request time out period exceeded (30002ms).
+Resource: KEY: 5:72057594049888256 (dbo.tbl_TransactionQueue)
+Process SPID 89 blocked by SPID 62 (ReportGeneratorService.exe)</pre>
+                                </div>
+                                <div>
+                                    <h3 class="text-sm font-semibold text-zinc-50">4. Resolution &amp; Permanent Prevention</h3>
+                                    <p class="mt-1 text-sm leading-relaxed text-zinc-400">
+                                        Terminated blocking session <code class="rounded bg-zinc-950 px-1.5 py-0.5 font-mono text-xs text-zinc-50" translate="no">SPID 62</code> cleanly, verified 14 consecutive branch transactions, and moved scheduled report runs to off-peak hours on the read-replica. Total resolution time: 11&nbsp;mins.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 2: PowerShell Script -->
+                    <div role="tabpanel" id="panel-powershell" aria-labelledby="tab-btn-powershell" data-panel="powershell"
+                        class="proof-panel hidden mt-6 rounded-xl border border-zinc-800 bg-zinc-900 p-6 shadow-profile">
+                        <div class="flex flex-wrap items-center justify-between gap-4 border-b border-zinc-800 pb-4">
+                            <div class="flex items-center gap-2.5">
+                                <span class="h-2.5 w-2.5 rounded-full bg-terracotta-500" aria-hidden="true"></span>
+                                <span class="text-xs font-medium text-zinc-400" translate="no">powershell / automation / New-UserOnboarding.ps1</span>
+                            </div>
+                            <button type="button" id="copyScriptBtn"
+                                class="inline-flex items-center gap-1.5 rounded-lg border border-zinc-800 bg-zinc-950 px-3 py-1 text-xs font-medium text-zinc-400 transition-transform duration-200 ease-spring hover:border-zinc-400/40 hover:text-zinc-50 active:scale-97 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500 motion-reduce:transition-none motion-reduce:transform-none">
+                                <span id="copyScriptLabel">Copy Script</span>
+                            </button>
+                        </div>
+
+                        <pre id="psCodeBlock" class="mt-5 overflow-x-auto rounded-xl border border-zinc-800 bg-zinc-950 p-5 font-mono text-xs leading-relaxed text-zinc-50" translate="no"># Production PowerShell Automation &middot; Emmanuel Kgaphola
+# Automates Entra ID / Azure AD RBAC group mapping and ITSM audit log output
+param (
+    [Parameter(Mandatory = $true)][string]$UserEmail,
+    [Parameter(Mandatory = $true)][string]$SiteCode,
+    [ValidateSet('Staff', 'Operations', 'Management')][string]$Role = 'Staff'
+)
+
+$ErrorActionPreference = 'Stop'
+Write-Host "[INIT] Provisioning $Role access for $UserEmail at site $SiteCode."
+
+$roleGroups = @{
+    'Staff'      = "ACL-Site-$SiteCode-StaffPortal"
+    'Operations' = "ACL-Site-$SiteCode-Operations"
+    'Management' = "ACL-Site-$SiteCode-Management"
+}
+
+try {
+    $adUser = Get-AzureADUser -ObjectId $UserEmail
+    $targetGroup = Get-AzureADGroup -SearchString $roleGroups[$Role]
+    Add-AzureADGroupMember -ObjectId $targetGroup.ObjectId -RefObjectId $adUser.ObjectId
+    Write-Host "[SUCCESS] Added $UserEmail to $($targetGroup.DisplayName)"
+} catch {
+    Write-Error "[FAIL] Provisioning aborted: $_"
+}</pre>
+                    </div>
+
+                    <!-- Panel 3: Zabbix Alert Tuning -->
+                    <div role="tabpanel" id="panel-zabbix" aria-labelledby="tab-btn-zabbix" data-panel="zabbix"
+                        class="proof-panel hidden mt-6 rounded-xl border border-zinc-800 bg-zinc-900 p-6 shadow-profile">
+                        <div class="border-b border-zinc-800 pb-4">
+                            <h3 class="text-lg font-semibold tracking-tight text-zinc-50">Alert Optimization: Cutting False Positives by 88% Across 50+ Sites</h3>
+                            <p class="mt-1 text-sm text-zinc-400">
+                                When monitoring cries wolf every 10&nbsp;minutes, on-call technicians miss real outages. I partnered with Senior Engineering to audit and rewrite our WAN trigger expressions.
+                            </p>
+                        </div>
+
+                        <div class="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
+                            <div class="rounded-xl border border-zinc-800 bg-zinc-950 p-5">
+                                <span class="text-xs font-medium text-zinc-400">Before Tuning &middot; Alert Fatigue</span>
+                                <p class="mt-2 text-xl font-semibold text-zinc-50 tabular-nums">42 false alerts / night</p>
+                                <p class="mt-2 text-sm leading-relaxed text-zinc-400">
+                                    Triggered by brief 3-second wireless WAN latency spikes at remote branches.
+                                </p>
+                                <div class="mt-4 rounded-lg border border-zinc-800 bg-zinc-900 p-3 font-mono text-xs text-zinc-400" translate="no">
+                                    icmppingloss &gt; 0%
+                                </div>
+                                <p class="mt-3 text-xs text-zinc-400">
+                                    Outcome: Real disk and SQL warnings buried in noise.
+                                </p>
+                            </div>
+
+                            <div class="rounded-xl border border-terracotta-500/40 bg-zinc-950 p-5">
+                                <span class="text-xs font-semibold text-terracotta-500">After Tuning &middot; Actionable Signal</span>
+                                <p class="mt-2 text-xl font-semibold text-zinc-50 tabular-nums">4 real alerts / night (-88%)</p>
+                                <p class="mt-2 text-sm leading-relaxed text-zinc-400">
+                                    Sustained packet-loss window combined with agent heartbeat verification over 6&nbsp;months with zero missed outages.
+                                </p>
+                                <div class="mt-4 rounded-lg border border-zinc-800 bg-zinc-900 p-3 font-mono text-xs text-zinc-50" translate="no">
+                                    min(/host/icmppingloss, 5m) &gt; 25% and nodata(/host/agent.ping, 3m) = 1
+                                </div>
+                                <p class="mt-3 text-xs font-medium text-terracotta-500">
+                                    Outcome: Every alert represents a verified incident.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 4: Daily Ops Report -->
+                    <div role="tabpanel" id="panel-report" aria-labelledby="tab-btn-report" data-panel="report"
+                        class="proof-panel hidden mt-6 rounded-xl border border-zinc-800 bg-zinc-900 p-6 shadow-profile">
+                        <div class="flex flex-wrap items-center justify-between gap-4 border-b border-zinc-800 pb-4">
+                            <div>
+                                <h3 class="text-lg font-semibold tracking-tight text-zinc-50">End-of-Shift Operational Attestation</h3>
+                                <p class="mt-0.5 text-sm text-zinc-400">Distributed daily at 16:30 after verifying all remote site controls.</p>
+                            </div>
+                            <span class="rounded-md border border-zinc-800 bg-zinc-950 px-2.5 py-1 text-xs font-semibold text-terracotta-500 tabular-nums">
+                                52/52 Sites Verified
+                            </span>
+                        </div>
+
+                        <div class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                            <div class="rounded-xl border border-zinc-800 bg-zinc-950 p-4">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-semibold text-zinc-50">SQL Backups</span>
+                                    <span class="text-xs font-semibold text-terracotta-500 tabular-nums">52/52 PASS</span>
+                                </div>
+                                <p class="mt-2 text-xs leading-relaxed text-zinc-400">All remote site databases verified against delta size baselines.</p>
+                            </div>
+
+                            <div class="rounded-xl border border-zinc-800 bg-zinc-950 p-4">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-semibold text-zinc-50">Meraki Bandwidth</span>
+                                    <span class="text-xs font-semibold text-terracotta-500 tabular-nums">&lt;&nbsp;85% Load</span>
+                                </div>
+                                <p class="mt-2 text-xs leading-relaxed text-zinc-400">2-hour spot checks clean. Minor 11:00 peak on Depot&nbsp;03 cleared.</p>
+                            </div>
+
+                            <div class="rounded-xl border border-zinc-800 bg-zinc-950 p-4">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-semibold text-zinc-50">Action1 Patching</span>
+                                    <span class="text-xs font-semibold text-terracotta-500 tabular-nums">98.6% Compliant</span>
+                                </div>
+                                <p class="mt-2 text-xs leading-relaxed text-zinc-400">Critical OS CVEs deployed with zero unscheduled daytime reboots.</p>
+                            </div>
+
+                            <div class="rounded-xl border border-zinc-800 bg-zinc-950 p-4">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-semibold text-zinc-50">CCTV &amp; NVRs</span>
+                                    <span class="text-xs font-semibold text-zinc-50 tabular-nums">0 Blind Spots</span>
+                                </div>
+                                <p class="mt-2 text-xs leading-relaxed text-zinc-400">Secondary NVR on Node&nbsp;07 rebooted cleanly; access feeds online.</p>
+                            </div>
+
+                            <div class="rounded-xl border border-zinc-800 bg-zinc-950 p-4">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-semibold text-zinc-50">PABX Voice Quality</span>
+                                    <span class="text-xs font-semibold text-zinc-50 tabular-nums">&lt;&nbsp;30ms Jitter</span>
+                                </div>
+                                <p class="mt-2 text-xs leading-relaxed text-zinc-400">Test calls verified across 4 regional branches with zero dropped frames.</p>
+                            </div>
+
+                            <div class="rounded-xl border border-zinc-800 bg-zinc-950 p-4">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-semibold text-zinc-50">Tracked Site Risks</span>
+                                    <span class="text-xs font-medium text-zinc-400" translate="no">TSK-4019</span>
+                                </div>
+                                <p class="mt-2 text-xs leading-relaxed text-zinc-400">Generator fuel float sensor replacement logged and scheduled.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: THE OPERATIONAL TOOLBOX -->
+        <section id="toolbox" class="scroll-mt-20 border-t border-zinc-800/80 py-24">
+            <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+                <div class="max-w-2xl">
+                    <h2 class="text-2xl font-semibold tracking-tight text-zinc-50 text-balance">
+                        What I actually use to keep 50+&nbsp;sites running
+                    </h2>
+                    <p class="mt-3 text-base leading-relaxed text-zinc-400">
+                        Grouped by operational criticality rather than buzzwords: the tool, what I do with it, and the downtime it prevents.
+                    </p>
+                </div>
+
+                <div class="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-3">
+                    <!-- Column 1: Daily Critical -->
+                    <div class="rounded-xl border border-zinc-800 bg-zinc-900 p-6 shadow-card">
+                        <div class="border-b border-zinc-800 pb-4">
+                            <span class="text-xs font-semibold text-terracotta-500">Tier A &middot; Daily Critical</span>
+                            <h3 class="mt-1 text-lg font-semibold tracking-tight text-zinc-50">If this fails, operations halt</h3>
+                        </div>
+                        <dl class="mt-5 space-y-5">
+                            <div>
+                                <dt class="text-sm font-semibold text-zinc-50" translate="no">Odoo ITSM</dt>
+                                <dd class="mt-1 text-sm leading-relaxed text-zinc-400">Queue triage, escalations, and 100% ticket hygiene. No ticket means it didn&rsquo;t happen.</dd>
+                            </div>
+                            <div>
+                                <dt class="text-sm font-semibold text-zinc-50">SQL Server Backup Verification</dt>
+                                <dd class="mt-1 text-sm leading-relaxed text-zinc-400">Daily verification across all sites. A backup you didn&rsquo;t verify is just a wish.</dd>
+                            </div>
+                            <div>
+                                <dt class="text-sm font-semibold text-zinc-50" translate="no">Zabbix / Cisco Meraki / SolarWinds</dt>
+                                <dd class="mt-1 text-sm leading-relaxed text-zinc-400">2-hour spot checks on bandwidth, temperature, UPS power, and storage thresholds.</dd>
+                            </div>
+                        </dl>
+                    </div>
+
+                    <!-- Column 2: Weekly Governance -->
+                    <div class="rounded-xl border border-zinc-800 bg-zinc-900 p-6 shadow-card">
+                        <div class="border-b border-zinc-800 pb-4">
+                            <span class="text-xs font-semibold text-terracotta-500">Tier B &middot; Weekly Controls</span>
+                            <h3 class="mt-1 text-lg font-semibold tracking-tight text-zinc-50">Keeps us compliant &amp; secure</h3>
+                        </div>
+                        <dl class="mt-5 space-y-5">
+                            <div>
+                                <dt class="text-sm font-semibold text-zinc-50" translate="no">Microsoft Entra ID / Azure AD</dt>
+                                <dd class="mt-1 text-sm leading-relaxed text-zinc-400">Role-based access control (RBAC), user lifecycle provisioning, and hardware asset register.</dd>
+                            </div>
+                            <div>
+                                <dt class="text-sm font-semibold text-zinc-50" translate="no">Action1 RMM &amp; Patching</dt>
+                                <dd class="mt-1 text-sm leading-relaxed text-zinc-400">Automated vulnerability patching across endpoints and servers with zero daytime disruption.</dd>
+                            </div>
+                            <div>
+                                <dt class="text-sm font-semibold text-zinc-50" translate="no">PowerShell + Excel Automation</dt>
+                                <dd class="mt-1 text-sm leading-relaxed text-zinc-400">Automated user onboarding and daily operational reporting that saves ~5&nbsp;hours every week.</dd>
+                            </div>
+                        </dl>
+                    </div>
+
+                    <!-- Column 3: Diagnostic Edge -->
+                    <div class="rounded-xl border border-zinc-800 bg-zinc-900 p-6 shadow-card">
+                        <div class="border-b border-zinc-800 pb-4">
+                            <span class="text-xs font-semibold text-terracotta-500">Tier C &middot; Diagnostic Edge</span>
+                            <h3 class="mt-1 text-lg font-semibold tracking-tight text-zinc-50">Software + hardware roots</h3>
+                        </div>
+                        <dl class="mt-5 space-y-5">
+                            <div>
+                                <dt class="text-sm font-semibold text-zinc-50">Remote Hands &amp; VoIP/PABX</dt>
+                                <dd class="mt-1 text-sm leading-relaxed text-zinc-400">Endpoint hardware diagnostics, NVR/CCTV feeds, <span translate="no">TeamViewer</span>/<span translate="no">AnyDesk</span>, and branch telephony.</dd>
+                            </div>
+                            <div>
+                                <dt class="text-sm font-semibold text-zinc-50" translate="no">C# / Java / SQL Foundation</dt>
+                                <dd class="mt-1 text-sm leading-relaxed text-zinc-400">IIE Diploma in Software Development. I read stack traces and SQL execution plans instead of guessing.</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: WORKING PRINCIPLES -->
+        <section id="principles" class="scroll-mt-20 border-t border-zinc-800/80 py-24">
+            <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+                <div class="max-w-2xl">
+                    <h2 class="text-2xl font-semibold tracking-tight text-zinc-50 text-balance">
+                        Four rules learned in the help desk trenches
+                    </h2>
+                    <p class="mt-3 text-base leading-relaxed text-zinc-400">
+                        High-volume support and strict governance audits boiled down to four non-negotiables.
+                    </p>
+                </div>
+
+                <div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
+                    <div class="rounded-xl border border-zinc-800 bg-zinc-900 p-6 shadow-card">
+                        <span class="text-xs font-semibold text-terracotta-500">Rule 01</span>
+                        <h3 class="mt-2 text-lg font-semibold tracking-tight text-zinc-50">Human first, machine second</h3>
+                        <p class="mt-2 text-sm leading-relaxed text-zinc-400">
+                            In the first 30&nbsp;seconds: who is impacted, what system failed, and what is the business risk? Panic drops when people feel heard; systems recover when you follow calm diagnostics.
+                        </p>
+                    </div>
+
+                    <div class="rounded-xl border border-zinc-800 bg-zinc-900 p-6 shadow-card">
+                        <span class="text-xs font-semibold text-terracotta-500">Rule 02</span>
+                        <h3 class="mt-2 text-lg font-semibold tracking-tight text-zinc-50">No ticket, no existence</h3>
+                        <p class="mt-2 text-sm leading-relaxed text-zinc-400">
+                            Every check, alert, build, and patch must have an <span translate="no">Odoo</span> ticket with log evidence and a verified rollback plan. Touching production without a ticket is gambling, not support.
+                        </p>
+                    </div>
+
+                    <div class="rounded-xl border border-zinc-800 bg-zinc-900 p-6 shadow-card">
+                        <span class="text-xs font-semibold text-terracotta-500">Rule 03</span>
+                        <h3 class="mt-2 text-lg font-semibold tracking-tight text-zinc-50">Automate misery, own the script</h3>
+                        <p class="mt-2 text-sm leading-relaxed text-zinc-400">
+                            My <span translate="no">PowerShell</span> scripts save hours of manual entry every week. But if my script causes a hitch, that is my ticket to fix. Code is leverage, never an excuse.
+                        </p>
+                    </div>
+
+                    <div class="rounded-xl border border-zinc-800 bg-zinc-900 p-6 shadow-card">
+                        <span class="text-xs font-semibold text-terracotta-500">Rule 04</span>
+                        <h3 class="mt-2 text-lg font-semibold tracking-tight text-zinc-50">Kill causes, not symptoms</h3>
+                        <p class="mt-2 text-sm leading-relaxed text-zinc-400">
+                            On Tier&nbsp;1, a quick reboot gets the queue moving. On Tier&nbsp;2, rebooting without reading the event logs just schedules tomorrow&rsquo;s outage. Find the root cause and fix it once.
+                        </p>
+                    </div>
+                </div>
+
+                <blockquote class="mt-8 rounded-xl border border-zinc-800 bg-zinc-900 p-6 shadow-card">
+                    <p class="text-base leading-relaxed text-zinc-50">
+                        &ldquo;Uptime isn&rsquo;t a vanity metric on a slide deck. It&rsquo;s branch staff and operations running smoothly without interruption because the systems, networks, and databases actually work.&rdquo;
+                    </p>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- SECTION 6: STORY & CREDENTIALS -->
+        <section id="story" class="scroll-mt-20 border-t border-zinc-800/80 py-24">
+            <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 gap-12 lg:grid-cols-12">
+                    <div class="lg:col-span-4">
+                        <h2 class="text-2xl font-semibold tracking-tight text-zinc-50 text-balance">
+                            Why a software background makes me stronger at infrastructure
+                        </h2>
+                        <p class="mt-4 text-base leading-relaxed text-zinc-400">
+                            Developer-grade root cause analysis applied to live enterprise operations.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6 lg:col-span-8">
+                        <div class="rounded-xl border border-zinc-800 bg-zinc-900 p-6 shadow-card">
+                            <p class="text-base leading-relaxed text-zinc-50">
+                                I studied software development (<span translate="no">C#</span>, <span translate="no">Java</span>, <span translate="no">PHP</span>, <span translate="no">Kotlin</span>, relational database design) at Rosebank College (2022&ndash;2024), backed by a Higher Certificate in IT Support Services (2021). I chose infrastructure and operations because I thrive in the moment when high-stakes systems break and someone has to restore order fast.
+                            </p>
+                            <p class="mt-4 text-sm leading-relaxed text-zinc-400">
+                                Having a software engineering foundation is an unfair advantage in Tier&nbsp;2 support. When an enterprise application stalls, I don&rsquo;t treat it as a black box &mdash; I inspect stack traces, SQL locking chains, and API payloads. That is how I advanced from Help Desk (Tier&nbsp;1) to IT Support Technician (Tier&nbsp;2) in 13&nbsp;months at TonTrac Systems Analytics.
+                            </p>
+                        </div>
+
+                        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                            <div class="rounded-xl border border-zinc-800 bg-zinc-900 p-6 shadow-card">
+                                <span class="text-xs font-semibold text-terracotta-500">Performance Attestation</span>
+                                <p class="mt-3 text-sm leading-relaxed text-zinc-50">
+                                    &ldquo;Emmanuel consistently maintains 100% ticket hygiene in Odoo and reduced night-shift alert noise by 88%. Advanced from Help Desk (T1) to IT Support Technician (T2) after 13&nbsp;months based on diagnostic RCA quality and audit readiness.&rdquo;
+                                </p>
+                                <p class="mt-3 text-xs text-zinc-400">TonTrac Operations &middot; IT Administration</p>
+                            </div>
+
+                            <div class="rounded-xl border border-zinc-800 bg-zinc-900 p-6 shadow-card">
+                                <span class="text-xs font-semibold text-terracotta-500">Continuous Upskilling &amp; Homelab</span>
+                                <p class="mt-3 text-sm leading-relaxed text-zinc-400">
+                                    <strong class="font-medium text-zinc-50">Homelab in Progress:</strong> Replicating multi-branch infrastructure locally with Active Directory, <span translate="no">Zabbix</span> agents, <span translate="no">Grafana</span> dashboards, and simulated WAN failovers.
+                                </p>
+                                <p class="mt-2 text-sm leading-relaxed text-zinc-400">
+                                    <strong class="font-medium text-zinc-50">Certifications in Flight:</strong> Preparing for Microsoft <span translate="no">AZ-900</span> (Azure Fundamentals) and <span translate="no">MS-900</span>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 7: DIRECT CONTACT & HIRING FUNNEL -->
+        <section id="contact" class="scroll-mt-20 border-t border-zinc-800/80 py-24">
+            <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 gap-12 lg:grid-cols-12">
+                    <div class="lg:col-span-5">
+                        <h2 class="text-2xl font-semibold tracking-tight text-zinc-50 text-balance">
+                            Talk to me directly
+                        </h2>
+                        <p class="mt-4 text-base leading-relaxed text-zinc-400">
+                            I reply within a day, usually faster. Whether you need a Tier&nbsp;2 escalation technician who digs into root causes, someone who writes reliable <span translate="no">PowerShell</span> automation, or an operator who treats ticket hygiene like gospel &mdash; send the role details and I&rsquo;ll tell you straight how I can help.
+                        </p>
+
+                        <div class="mt-8 space-y-3">
+                            <a href="tel:+27620345804"
+                                class="block rounded-xl border border-zinc-800 bg-zinc-900 p-4 transition-colors duration-200 hover:border-zinc-400/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500">
+                                <span class="block text-xs text-zinc-400">Call or WhatsApp</span>
+                                <strong class="mt-1 block text-sm font-semibold text-zinc-50 tabular-nums">+27 62 034 5804</strong>
+                            </a>
+
+                            <a href="mailto:emmanuelkgaphola@outlook.com"
+                                class="block rounded-xl border border-zinc-800 bg-zinc-900 p-4 transition-colors duration-200 hover:border-zinc-400/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500">
+                                <span class="block text-xs text-zinc-400">Direct Email</span>
+                                <strong class="mt-1 block break-words text-sm font-semibold text-zinc-50">emmanuelkgaphola@outlook.com</strong>
+                            </a>
+
+                            <a href="https://linkedin.com/in/emmanuel-kgaphola" target="_blank" rel="noopener"
+                                class="block rounded-xl border border-zinc-800 bg-zinc-900 p-4 transition-colors duration-200 hover:border-zinc-400/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500">
+                                <span class="block text-xs text-zinc-400">LinkedIn</span>
+                                <strong class="mt-1 block text-sm font-semibold text-zinc-50">linkedin.com/in/emmanuel-kgaphola &#8599;</strong>
+                            </a>
+
+                            <a href="CV/Emmanuel_Kgaphola_CV.docx" download
+                                class="block rounded-xl border border-zinc-800 bg-zinc-900 p-4 transition-colors duration-200 hover:border-zinc-400/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500">
+                                <span class="block text-xs text-zinc-400">Curriculum Vitae</span>
+                                <strong class="mt-1 block text-sm font-semibold text-terracotta-500">Download Emmanuel_Kgaphola_CV.docx &darr;</strong>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-7">
+                        <form id="contactForm" action="https://formspree.io/f/xgoebodo" method="POST" novalidate
+                            class="rounded-xl border border-zinc-800 bg-zinc-900 p-6 shadow-profile sm:p-8">
+                            <div class="flex items-center justify-between border-b border-zinc-800 pb-4">
+                                <h3 class="text-lg font-semibold tracking-tight text-zinc-50">Send a Direct Message</h3>
+                                <span class="text-xs text-zinc-400">Straight to my inbox</span>
+                            </div>
+
+                            <div class="mt-6 space-y-5">
+                                <div>
+                                    <label for="contact-name" class="block text-sm font-medium text-zinc-50">
+                                        Your Name
+                                    </label>
+                                    <input type="text" id="contact-name" name="name" autocomplete="name" required
+                                        placeholder="e.g. Naledi from Operations."
+                                        class="mt-2 block w-full rounded-lg border border-zinc-800 bg-zinc-950 px-3.5 py-2.5 text-sm text-zinc-50 placeholder-zinc-400/60 transition-colors duration-200 focus:border-terracotta-500 focus:outline-none focus:ring-2 focus:ring-terracotta-500">
+                                    <p id="error-name" class="mt-1.5 hidden text-xs text-terracotta-500" role="alert"></p>
+                                </div>
+
+                                <div>
+                                    <label for="contact-email" class="block text-sm font-medium text-zinc-50">
+                                        Your Email Address
+                                    </label>
+                                    <input type="email" id="contact-email" name="email" autocomplete="email" inputmode="email" spellcheck="false" required
+                                        placeholder="e.g. naledi@company.co.za."
+                                        class="mt-2 block w-full rounded-lg border border-zinc-800 bg-zinc-950 px-3.5 py-2.5 text-sm text-zinc-50 placeholder-zinc-400/60 transition-colors duration-200 focus:border-terracotta-500 focus:outline-none focus:ring-2 focus:ring-terracotta-500">
+                                    <p id="error-email" class="mt-1.5 hidden text-xs text-terracotta-500" role="alert"></p>
+                                </div>
+
+                                <div>
+                                    <label for="contact-subject" class="block text-sm font-medium text-zinc-50">
+                                        Role or Topic
+                                    </label>
+                                    <input type="text" id="contact-subject" name="subject" autocomplete="off" required
+                                        placeholder="e.g. Tier 2 Support Role / Infrastructure Escalations."
+                                        class="mt-2 block w-full rounded-lg border border-zinc-800 bg-zinc-950 px-3.5 py-2.5 text-sm text-zinc-50 placeholder-zinc-400/60 transition-colors duration-200 focus:border-terracotta-500 focus:outline-none focus:ring-2 focus:ring-terracotta-500">
+                                    <p id="error-subject" class="mt-1.5 hidden text-xs text-terracotta-500" role="alert"></p>
+                                </div>
+
+                                <div>
+                                    <label for="contact-message" class="block text-sm font-medium text-zinc-50">
+                                        Message
+                                    </label>
+                                    <textarea id="contact-message" name="message" rows="4" autocomplete="off" required
+                                        placeholder="e.g. Our branch app freezes every second night and we need someone who documents root causes."
+                                        class="mt-2 block w-full rounded-lg border border-zinc-800 bg-zinc-950 px-3.5 py-2.5 text-sm text-zinc-50 placeholder-zinc-400/60 transition-colors duration-200 focus:border-terracotta-500 focus:outline-none focus:ring-2 focus:ring-terracotta-500"></textarea>
+                                    <p id="error-message" class="mt-1.5 hidden text-xs text-terracotta-500" role="alert"></p>
+                                </div>
+
+                                <div class="pt-2">
+                                    <button type="submit" id="submitBtn"
+                                        class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-terracotta-500 px-5 py-3.5 text-sm font-semibold text-zinc-950 shadow-profile transition-transform duration-200 ease-spring hover:bg-terracotta-600 active:scale-98 disabled:opacity-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900 motion-reduce:transition-none motion-reduce:transform-none">
+                                        <span id="submitBtnText">Send Direct Message</span>
+                                    </button>
+                                    <p id="formNote" aria-live="polite" class="mt-3 text-center text-xs text-zinc-400">
+                                        Johannesburg &middot; Hybrid or Remote &middot; References available on request.
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-zinc-800/80 bg-zinc-950 py-12">
+        <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 sm:flex-row sm:px-6 lg:px-8">
+            <p class="text-sm text-zinc-400">
+                <strong class="font-medium text-zinc-50">Emmanuel Kgaphola</strong> &middot; Tier&nbsp;2 IT Support Technician, Johannesburg
+            </p>
+            <div class="flex items-center gap-6 text-xs font-medium text-zinc-400">
+                <a href="CV/Emmanuel_Kgaphola_CV.docx" download class="rounded transition-colors duration-200 hover:text-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500">Download CV</a>
+                <a href="#top" class="rounded transition-colors duration-200 hover:text-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-500">Back to top &uarr;</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Accessible Polite Toast Notification -->
+    <div id="toastNotification" role="status" aria-live="polite" aria-atomic="true"
+        class="pointer-events-none fixed bottom-6 right-6 z-50 translate-y-4 opacity-0 transition-opacity duration-200 ease-spring motion-reduce:transition-none motion-reduce:transform-none">
+        <div class="rounded-xl border border-zinc-800 bg-zinc-900 px-4 py-3 text-xs font-medium text-zinc-50 shadow-profile">
+            <span id="toastMsg">Ready.</span>
+        </div>
+    </div>
+
+    <script src="/legacy/script.js"></script>
+</body>
+
+</html>
+
