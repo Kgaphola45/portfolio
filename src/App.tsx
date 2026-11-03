@@ -184,6 +184,12 @@ function Hero() {
             Review 99.9% Uptime &amp; Impact
           </a>
           <a
+            href="#experience"
+            className={`${pill} border border-white/20 bg-white/10 backdrop-blur-md text-white shadow-lg transition-all duration-200 hover:bg-white hover:text-black`}
+          >
+            Tier 1 &amp; Tier 2 Experience
+          </a>
+          <a
             href="#evidence"
             className={`${pill} border border-white/20 bg-white/10 backdrop-blur-md text-white shadow-lg transition-all duration-200 hover:bg-white hover:text-black`}
           >
@@ -746,7 +752,7 @@ function ContactSection() {
       <div className="w-full px-6 sm:px-10 lg:px-16 xl:px-20">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
-            <span className="text-xs uppercase font-mono tracking-widest text-indigo-300">05 &middot; Direct Line</span>
+            <span className="text-xs uppercase font-mono tracking-widest text-indigo-300">06 &middot; Direct Line</span>
             <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight mt-2 text-white">Let&rsquo;s talk directly</h2>
             <p className="mt-3 text-neutral-300 text-sm sm:text-base leading-relaxed">
               I reply within one business day, usually faster. If you need a Tier 2 technician who uncovers root causes and treats ticket hygiene like gospel, send a message.
@@ -864,6 +870,7 @@ export default function App() {
         <Hero />
         <EvidenceSection />
         <ImpactSection />
+        <ExperienceSection />
         <ShiftSection />
         <ToolboxSection />
         <ContactSection />
