@@ -386,8 +386,8 @@ try {
 
 function ImpactSection() {
   return (
-    <section id="impact" className="py-24 border-t border-white/10 text-neutral-100">
-      <div className="max-w-6xl mx-auto px-5 sm:px-8">
+    <section id="impact" className="py-24 border-t border-white/10 text-neutral-100 w-full">
+      <div className="w-full px-6 sm:px-10 lg:px-16 xl:px-20">
         <div className="grid lg:grid-cols-12 gap-12 items-start">
           <div className="lg:col-span-5">
             <span className="text-xs uppercase font-mono tracking-widest text-indigo-300">02 &middot; Outcomes &amp; Metrics</span>
@@ -460,8 +460,8 @@ function ShiftSection() {
   ];
 
   return (
-    <section id="shift" className="py-24 border-t border-white/10 text-neutral-100">
-      <div className="max-w-6xl mx-auto px-5 sm:px-8">
+    <section id="shift" className="py-24 border-t border-white/10 text-neutral-100 w-full">
+      <div className="w-full px-6 sm:px-10 lg:px-16 xl:px-20">
         <span className="text-xs uppercase font-mono tracking-widest text-indigo-300">03 &middot; The Rhythm</span>
         <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight mt-2 text-white">What a normal day looks like from my chair</h2>
 
@@ -483,8 +483,8 @@ function ShiftSection() {
 
 function ToolboxSection() {
   return (
-    <section id="toolbox" className="py-24 border-t border-white/10 text-neutral-100">
-      <div className="max-w-6xl mx-auto px-5 sm:px-8">
+    <section id="toolbox" className="py-24 border-t border-white/10 text-neutral-100 w-full">
+      <div className="w-full px-6 sm:px-10 lg:px-16 xl:px-20">
         <span className="text-xs uppercase font-mono tracking-widest text-indigo-300">04 &middot; Operational Stack</span>
         <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight mt-2 text-white">Tools used to keep 50+ sites running</h2>
 
@@ -538,8 +538,8 @@ function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-24 border-t border-white/10 text-neutral-100">
-      <div className="max-w-6xl mx-auto px-5 sm:px-8">
+    <section id="contact" className="py-24 border-t border-white/10 text-neutral-100 w-full">
+      <div className="w-full px-6 sm:px-10 lg:px-16 xl:px-20">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
             <span className="text-xs uppercase font-mono tracking-widest text-indigo-300">05 &middot; Direct Line</span>
@@ -642,8 +642,8 @@ export default function App() {
   const videoRef = useMouseScrub();
 
   return (
-    <div className="relative min-h-screen text-white bg-transparent">
-      {/* Background 3D Video Character - visible cleanly across the entire page */}
+    <div className="relative min-h-screen w-full text-white bg-transparent">
+      {/* Background 3D Video Character - edge-to-edge coverage */}
       <video
         ref={videoRef}
         src={VIDEO_SRC}
@@ -651,11 +651,11 @@ export default function App() {
         playsInline
         preload="auto"
         aria-hidden="true"
-        className="fixed inset-0 z-0 h-full w-full object-cover pointer-events-none"
+        className="fixed inset-0 z-0 h-screen w-screen min-h-screen min-w-full object-cover pointer-events-none"
         style={{ objectPosition: "70% center" }}
       />
 
-      <div className="relative z-10">
+      <div className="relative z-10 w-full">
         <Navbar />
         <Hero />
         <EvidenceSection />
@@ -664,7 +664,7 @@ export default function App() {
         <ToolboxSection />
         <ContactSection />
 
-        <footer className="py-8 border-t border-white/10 text-center text-xs font-mono text-neutral-400 backdrop-blur-sm bg-white/[0.02]">
+        <footer className="py-8 border-t border-white/10 text-center text-xs font-mono text-neutral-400 backdrop-blur-sm bg-white/[0.02] w-full px-6 sm:px-10">
           Emmanuel Kgaphola &middot; Tier 2 IT Support Technician &middot; Johannesburg
         </footer>
       </div>
